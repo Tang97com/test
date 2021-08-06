@@ -1,0 +1,33 @@
+<block>
+  <view>
+    <van-search
+    value="{{ name }}"
+    placeholder="请输入搜索关键词"
+    show-action
+    bind:change="onChange"
+    bind:search="onSearch"
+    bind:cancel="onCancel"
+    focus="{{focus}}"
+    />
+  </view>
+
+  <view class="container">
+    <view>搜索发现</view>
+    <view class="searchlist">
+      <van-tag 
+      class="tag" wx:for="{{recommend}}" wx:key="index" 
+      color="#000" plain bindtap="getName" data-name="{{item}}" size="large" text-color="#000"
+      >{{item}}</van-tag>
+    </view>
+  </view>
+
+  <view class="container">
+     <view>搜索历史</view>
+     <view class="searchlist">
+       <van-tag 
+       class="tag" wx:for="{{history}}" wx:key="index" 
+       color="#ffe1e1" bindtap="getName" data-name="{{item}}" round size="large" text-color="#ad0000"
+       >{{item}}</van-tag>
+     </view>
+  </view>
+</block>

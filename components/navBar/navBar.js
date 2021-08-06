@@ -1,0 +1,15 @@
+const app = getApp()
+Component({
+  properties: {
+    color: {
+      type: String,
+      value: 'linear-gradient(0deg, #3CDFFF, #2F91FF);'
+    }
+  },
+  data: {
+    navBarHeight: app.globalData.navBarHeight, //导航栏高度
+    menuRight: app.globalData.menuRight, // 胶囊距右方间距（方保持左、右间距一致）
+    menuBotton: app.globalData.menuBotton,
+    menuHeight: app.globalData.menuHeight
+  },
+})

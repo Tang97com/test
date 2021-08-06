@@ -1,0 +1,196 @@
+.Settlement {
+  background-color: #f5f5f5;
+  padding: 20rpx;
+}
+
+.Settlement .SettlementContent .SettlementTop {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  height: 130rpx;
+  line-height: 130rpx;
+  border-radius: 20rpx;
+  box-shadow: 3rpx 6rpx 6rpx #c8c8c8;
+  overflow: hidden;
+  padding-right: 18rpx;
+}
+
+.Settlement .SettlementContent .SettlementTop view {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  line-height: normal;
+  padding: 24rpx;
+}
+
+.Settlement .SettlementContent .SettlementTop view text:nth-child(1) {
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.Settlement .SettlementContent .SettlementTop view text:nth-child(2) {
+  font-size: 28rpx;
+}
+
+.Settlement .SettlementContent .SettlementCenter {
+  margin-top: 20rpx;
+  padding: 40rpx 20rpx 20rpx 20rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 3rpx 6rpx 6rpx #c8c8c8;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent {
+  padding-bottom: 18rpx;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .StoreName {
+  padding-bottom: 15rpx;
+  font-weight: bold;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .FoodsDetail .Food_details {
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .FoodsDetail .Food_details .Food_information {
+  display: flex;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .FoodsDetail .Food_details .Food_information .FoodName {
+  display: flex;
+  flex-direction: column;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .FoodsDetail .Food_details .Food_information .FoodName text {
+  color: #8f8f8f;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .FoodsDetail .Food_details .Food_information .FoodName text:first-child {
+  font-weight: bolder;
+  color: #000 !important;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .FoodsDetail .Food_details .Food_information .Food_image {
+  height: 100%;
+  line-height: 100%;
+  text-align: center;
+  padding: 10rpx 18rpx 0 0;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .FoodsDetail .Food_details .FoodAmount {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .FoodsDetail .Food_details .FoodAmount text:first-child {
+  font-weight: bold;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .FoodsDetail .Food_details .FoodAmount text:last-child {
+  color: #c8c8c8;
+  text-decoration: line-through;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .otherCost {
+  padding-top: 20rpx;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .otherCost .Cost {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8rpx;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .FoodContent .otherCost .Cost text {
+  font-weight: bold;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .Amount {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20rpx 15rpx 0rpx 0;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .Amount view:first-child {
+  padding-right: 25rpx;
+  padding-top: 11rpx;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .Amount view:first-child text {
+  color: #ff4a33;
+  font-size: 38rpx;
+}
+
+.Settlement .SettlementContent .SettlementCenter .FoodCenter .Amount view:last-child text {
+  font-weight: bold;
+  font-size: 50rpx;
+}
+
+.Settlement .SettlementContent .SettlementBottom {
+  margin-top: 20rpx;
+  padding: 40rpx 20rpx 20rpx 20rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 3rpx 6rpx 6rpx #c8c8c8;
+}
+
+.Settlement .SettlementContent .SettlementBottom .flexBox {
+  display: flex;
+  height: 56rpx;
+  line-height: 50rpx;
+}
+
+.Settlement .SettlementContent .SettlementBottom .flexBox i {
+  color: #c8c8c8;
+  padding-left: 10rpx;
+}
+
+.Settlement .SettlementContent .SettlementBottom .flexBox .flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Settlement .SettlementContent .SettlementBottom .flexBox .flex text {
+  font-size: 28rpx;
+}
+
+.Settlement .SettlementContent .SettlementBottom .flexBox .flex text:first-child {
+  font-weight: bold;
+}
+
+.Settlement .SettlementContent .SettlementBottom .flexBox .flex .Copies {
+  color: #8e8e8e;
+}
+
+.Submit_orders {
+  position: fixed;
+  bottom: 0;
+  height: 120rpx;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 25rpx;
+}
+
+.Submit_orders .total {
+  padding-right: 30rpx;
+}
+
+.Submit_orders .total text {
+  color: #ff4a33;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.Submit_orders .submit {
+  padding-right: 50rpx;
+}

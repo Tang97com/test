@@ -1,0 +1,73 @@
+<!-- 用户订单界面 -->
+<view wx:if="{{typesof == 'user'}}">
+  <view class="UserOrder">
+    <view class="Orderimg">
+      <image src="../../img/1.jpg" lazy-load="false">
+        
+      </image>
+    </view>
+    <view class="displayOrders">
+      <view class="OrderStatus">
+        <text>商家已接单/暂未接单</text>
+      </view>
+    </view>
+    <view class="Features">
+      <view>
+        <i class="ahh iconbianji1"></i>
+        <text>修改订单</text>
+      </view>
+      <view>
+        <i class="ahh icondianhua3"></i>
+        <text>联系商家</text>
+      </view>
+      <view>
+        <i class="ahh iconquxiao"></i>
+        <text>取消订单</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+<!-- 商家订单界面 -->
+<view wx:else="{{typesof == 'store'}}">
+  <view class="StoreOrder">
+    <view class="StoreCommodity">
+      <view>
+        <view class="CommodityDetail">
+          <van-image width="200rpx" height="150rpx" fit="scale-down" src="/Food/img/2.jpg" />
+          <text>商品名字价格数量</text>
+        </view>
+        <view class="CommodityDetail">
+          <van-image width="200rpx" height="150rpx" fit="scale-down" src="/Food/img/2.jpg" />
+          <text>商品名字价格数量</text>
+        </view>
+        <view class="CommodityDetail">
+          <van-image width="200rpx" height="150rpx" fit="scale-down" src="/Food/img/2.jpg" />
+          <text>商品名字价格数量</text>
+        </view>
+        <view class="CommodityDetail">
+          <van-image width="200rpx" height="150rpx" fit="scale-down" src="/Food/img/2.jpg" />
+          <text>商品名字价格数量</text>
+        </view>
+      </view>
+    </view>
+    <view class="UserOrderStatus">
+      <view><text>确认接单</text></view>
+    </view>
+    <view class="StoreFeatures">
+      <view class="features">
+        <view>
+          <i class="ahh iconkulian"></i>
+          <text>拒绝接单</text>
+        </view>
+        <view>
+          <i class="ahh icondianhua3"></i>
+          <text>联系买家</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

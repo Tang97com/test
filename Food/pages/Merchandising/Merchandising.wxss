@@ -1,0 +1,62 @@
+
+
+.Content_vtabs {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 85vh;
+  border: 1rpx solid red;
+}
+.text {
+  width: 100%;
+}
+.vtabs-content-item {
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ccc;
+  padding-bottom: 10rpx;
+}
+.food {
+  display: flex;
+}
+.Introduction {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 26rpx;
+}
+.Introduction span {
+  font-weight: bolder;
+}
+.Introduction text {
+  font-size: 28rpx;
+  width: 250rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.iconfont {
+  padding-top: 15rpx;
+  width: 210rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.iconfont text {
+  color: #f95b5b;
+}
+.increase {
+  height: 300rpx;
+  line-height: 200rpx;
+  text-align: center;
+}
+.increase i {
+  font-size: 50rpx;
+}
+
+/* 添加分类 */
+
+.AddToButton {
+  text-align: center;
+  height: 10vh;
+  line-height: 10vh;
+}

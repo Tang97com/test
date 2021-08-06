@@ -1,0 +1,65 @@
+page{
+  position: relative;
+  box-sizing: border-box;
+}
+.main {
+  padding: 50rpx 40rpx;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 28rpx;
+}
+.main-box view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1rpx #e1e1e1 solid;
+  padding: 20rpx 0;
+}
+.main-box view:first-child{
+  border-top: none;
+}
+.address_view {
+  border-top: none !important;
+}
+.main-box view input {
+  text-align: end;
+}
+.view-text-tarea {
+  border:  1rpx solid #e1e1e1;
+  padding: 20rpx;
+  width: 100%;
+}
+
+.custbtn {
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #3CDFFF, #2F91FF);
+  padding: 20rpx 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 40rpx;
+}
+.ahh {
+  color: #2F91FF;
+  padding-right: 5rpx;
+}
+.Pop {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  padding: 40rpx ;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.pop-item{
+  margin-top: 20rpx;
+}
+.pop-item:first-child{
+  margin-top: 0;
+}
+.delView {
+  border-top: none !important;
+  padding: 0 !important;
+}
+

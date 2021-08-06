@@ -1,0 +1,29 @@
+<view class="classify">
+  <scroll-view class='left-navbar' style="height:60vh" scroll-y="true">
+    <view bindtap="selectShop" class="text-hidden">
+      <i class="ahh iconxiala1"></i>
+      <text> {{storeFirstName}}</text>
+    </view>
+    <view wx:for="{{menu}}" class="{{ currentTab == index ? 'active' : '' }}" wx:key="unique"
+      bindtap="{{ currentTab != index ? 'navbarTap':'' }}" id="{{index}}" data-screenId="{{item.type}}">
+      {{item.name}}
+    </view>
+  </scroll-view>
+  <scroll-view class='right-navbar' style="height: 60vh" scroll-y="true" scroll-top="{{scrollTop}}">
+    <!--顶部图片-->
+    <view class="goods-banner">
+      <image class="img-banner" src="{{childrenArray.showImageUrl}}" wx:if="{{childrenArray.showImageUrl}}"
+        mode="scaleToFill"></image>
+    </view>
+    <!--商品展示-->
+    <view class="goods-list">
+      <view wx:for="{{storeData}}" wx:key="unique" data-obj="{{item}}" bindtap="showitems" class="vivify popIn shopitem">
+        <view class="goods-title">{{item.name}}</view>
+        <view class="goods">
+          <image class="img" src="{{item.url}}"></image>
+          <text>￥{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

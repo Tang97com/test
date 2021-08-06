@@ -1,0 +1,3 @@
+<view class="scroll-view">
+  <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+</view> 

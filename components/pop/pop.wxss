@@ -1,0 +1,35 @@
+@import '/animation/vivify.min.wxss';
+.pop {
+  position: relative;
+  z-index: 2;
+}
+.pup-agreement  {
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  position: fixed;
+  background: #fff;
+  border-radius: 20rpx;
+}
+.scroll-view {
+  height: 100%;
+  box-sizing: border-box;
+  /* padding: 20rpx 40rpx 0 40rpx; */
+  padding: 20rpx  0 20rpx 40rpx;
+  width: 100%;
+  overflow: hidden;
+}
+.custBtn {
+  font-size: 28rpx;
+  font-weight: 500;
+  background-color: #2F91FF;
+  color: #fff;
+  width: 92%;
+  margin: 20rpx auto;
+}
+.wb_rich {
+  display: block;
+  width: 95%;
+  box-sizing: border-box;
+}

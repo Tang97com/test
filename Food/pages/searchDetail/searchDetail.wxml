@@ -1,0 +1,43 @@
+<view class="searchResults">
+  <scroll-view scroll-y class="NavContent" lower-threshold>
+    <view class="ContentItem" wx:for="{{16}}" wx:key="index" bindtap="getOrdering" style="margin-top: 20rpx;">
+      <view class="StoreDetails">
+        <view>
+          <van-image width="200rpx" height="150rpx" fit="scale-down" src="/Food/img/2.jpg" />
+        </view>
+        <view class="Writing">
+          <h2>好口味大盘鸡</h2>
+          <view class="Detail">
+            <text>月售xxx</text>
+            <text>据您xxkm</text>
+          </view>
+          <view class="Money">
+            <text>起送￥0.00</text>
+            <text>配送￥15</text>
+          </view>
+          <view class="Rebate">
+            <i class="ahh iconfanquan"></i>
+            <text>返￥5.00</text>
+          </view>
+        </view>
+      </view>
+      <view class="commodity">
+        <view>
+          <van-image width="120rpx" height="120rpx" style="display: flex;justify-content: center;" fit="scale-down" src="/Food/img/1.jpg" />
+          <text>超级无敌好吃的炸鸡</text>
+          <text>￥16.00</text>
+        </view>
+        <view>
+          <van-image width="120rpx" height="120rpx" style="display: flex;justify-content: center;" fit="scale-down" src="/Food/img/1.jpg" />
+          <text>超级无敌好吃的炸鸡</text>
+          <text>￥16.00</text>
+        </view>
+        <view>
+          <van-image width="120rpx" height="120rpx" style="display: flex;justify-content: center;" fit="scale-down" src="/Food/img/1.jpg" />
+          <text>超级无敌好吃的炸鸡</text>
+          <text>￥16.00</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

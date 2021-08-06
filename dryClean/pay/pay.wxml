@@ -1,0 +1,112 @@
+<view class="first shadow">
+  <view class="itemline flex-between">
+    <text>订单编号</text>
+    <text>{{orderTime}}</text>
+  </view>
+  <view class="itemline flex-between">
+    <text>商品金额</text>
+    <text style="color: #F99930">￥ {{total}}</text>
+  </view>
+  <view class="itemline flex-between">
+    <text>配送费</text>
+    <text style="color: #F99930">￥ {{fee}}</text>
+  </view>
+  <view class="itemline flex-between">
+    <text>加急费</text>
+    <text style="color: #F99930">￥ {{jj}}</text>
+  </view>
+  <view class="itemline flex-between">
+    <text>总价</text>
+    <text style="color: #F99930">￥ {{price}}</text>
+  </view>
+</view>
+
+<!-- 地址 -->
+<view>
+  <view wx:if="{{showAdressFlag}}" class="addUser shadow" bindtap="gotoAddress">
+    <i class="ahh iconjia "></i>
+    <text>你还没有添加地址</text>
+  </view>
+
+  <view wx:if="{{!showAdressFlag}}" class="showCardAdress shadow" bindtap="gotoAddress">
+    <view class="showfind">
+      <i class="ahh icon-user"></i>
+      <text>{{findOneAdress.name}}</text>
+      <text>{{findOneAdress.gender}}</text>
+      <text>{{findOneAdress.tel}}</text>
+    </view>
+    <view class="showSecond">
+      <i class="ahh icondizhi1"></i>
+      {{findOneAdress.school_name}}
+      {{findOneAdress.detail_address}}
+    </view>
+  </view>
+</view>
+
+<!-- 配送配置 -->
+<view class="content shadow">
+  <view class="item">支付明细</view>
+  <view class="pd20 itemline flex-between" bindtap="showWay">
+    <text>配送方式</text>
+    <view>
+      <i class="ahh iconqiehuan" style="color: #2F91FF"></i>
+      {{sendWay[windex]}}
+    </view>
+  </view>
+  <view class="pd20 itemline flex-between" bindtap="showTime">
+    <text>配送时间</text>
+    <view>
+      <i class="ahh iconqiehuan" style="color: #2F91FF"></i>
+      {{sendTime[tindex]}}
+    </view>
+  </view>
+  <view class="pd20 itemline flex-between">
+    <text>是否自提</text>
+    <checkbox bindtap="changeStateZt" checked="{{ztflag}}"></checkbox>
+  </view>
+  <view class="pd20 itemline flex-between">
+    <text>是否加急</text>
+    <checkbox bindtap="changeState" checked="{{flag}}"></checkbox>
+  </view>
+  <view class="itemline flex-between" >
+    <text>物品数量</text>
+    <text>{{shopNumber}}</text>
+  </view>
+  <view class="itemline flex-between" >
+    <text>店铺名称</text>
+    <text>{{aloneShop.name}}</text>
+  </view>
+  <view class="itemline flex-between" >
+    <text>店铺地址</text>
+    <text>{{aloneShop.address}}</text>
+  </view>
+
+  <view class="pd20 itemline flex-between">
+    <textarea bindblur="getText" class="textarea" name="bzxx"  cols="20" rows="8" placeholder="备注信息，如需要可以填写，没有就不需要填写"></textarea>
+  </view>
+</view>
+
+
+<view class="orderDetermine flex-center">
+  <radio bindtap="checkBox" checked="{{detal}}"></radio>
+  <text bindtap="agreeDeal">我已阅读并同意用户协议需知</text>
+</view>
+<view class="payBtn" bindtap="payMoney">微信支付</view>
+
+<!-- 配送时间选择器 -->
+<view class="centerPop vivify fadeIn" wx:if="{{tFlag}}">
+  <view class="mask"></view>
+  <block wx:for="{{sendTime}}" wx:key="index">
+    <view class="itemsTime" bindtap="selectTime" id="{{index}}">{{item}}</view>
+  </block>
+</view>
+
+<!-- 配送方式选择器 -->
+<view class="centerPop vivify fadeIn" wx:if="{{wFlag}}">
+  <view class="mask"></view>
+  <block wx:for="{{sendWay}}" wx:key="index">
+    <view bindtap="selectWay" class="itemstext"  id="{{index}}">{{item}}</view>
+  </block>
+</view>
+
+<view class="Mask" wx:if="{{Mask}}"></view>

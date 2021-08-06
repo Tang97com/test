@@ -1,0 +1,15 @@
+.scroll-view {
+  height:80px;
+  white-space:nowrap;
+  line-height: 80px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.scroll-item {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  background-color: blue;
+}

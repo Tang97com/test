@@ -1,0 +1,27 @@
+
+.head {
+  height: 360rpx;
+  width: 100%;
+  background-color: burlywood;
+}
+.container {
+  box-sizing: border-box;
+}
+.small {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  /* background-color: chartreuse; */
+  width: 18%;
+  margin: 40rpx 1% 0 1%;
+  text-align: center;
+}
+
+.elet {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: blueviolet;
+  border-radius: 50%;
+}

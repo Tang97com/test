@@ -1,0 +1,17 @@
+<import src="/common/PersonCenter/PersonCenter.wxml" />
+
+<view>
+  <template is="PersonCenter" data="{{Icon, iconItem, hasUserInfo, userInfo}}"></template>
+
+  <button open-type="contact" class="btns">联系客服</button>
+  <view class="tips flexCenterColum">
+    <text>客服电话：{{phone}}</text>
+    <view class="server_time">{{service_time}}</view>
+    <view bindtap="phone" class="phone">立即拨打</view>
+  </view>
+</view>
+
+<view wx:if="{{flag}}">
+  <view class="Mask" bindtap="changeFlag"></view>
+  <pop nodes="{{nodes}}" bind:closer="changeFlag"></pop>
+</view>

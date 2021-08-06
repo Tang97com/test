@@ -1,0 +1,35 @@
+<view class="main">
+  <block>
+    <form catchsubmit="formSubmit" class="main-box">
+      <view>
+        <text>姓名：</text>
+        <input value="{{hcAddress.name}}" placeholder="请输入姓名" type="text" name="name" id="" />
+      </view>
+      <view>
+        <text>性别：</text>
+        <picker name="sex" mode="selector" value="{{index}}" bindchange='sex' range="{{sex}}">
+          <text>{{sex[index]}}</text>
+        </picker>
+      </view>
+      <view>
+        <text>手机号码：</text>
+        <input value="{{hcAddress.tel}}" placeholder="请输入手机号码" type="number" name="phone" id="" />
+      </view>
+      <view>
+        <text>学校名称：</text>
+        <picker bindchange="bindPickerChange" name="school" value="{{school_index}}"  range="{{school}}">
+          <i class="ahh iconxiala"></i>
+          <text>{{school[school_index]}}</text>
+        </picker>
+      </view>
+      <view>
+        <textarea class="view-text-tarea" value="{{hcAddress.detail_address}}" placeholder="输入详细地址,例：xx楼栋xx楼xx室  " name="detaildz" id="" cols="30"
+          rows="8"></textarea>
+      </view>
+      <!-- <button bindtap="saveUpdate" class="custbtn" wx:if="{{hcFlag}}">修改</button> -->
+      <button formType="submit" class="custbtn" >保存</button>
+    </form>
+  </block>
+</view>
+
+<view class="Mask" wx:if="{{mask}}"></view>

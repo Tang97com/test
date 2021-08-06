@@ -1,0 +1,27 @@
+page{
+  font-weight: 500;
+  font-size: 28rpx;
+}
+
+.order {
+  background-color: #fff;
+  width: 95%;
+  box-sizing: border-box;
+  padding: 20rpx 40rpx;
+  margin: 40rpx auto;
+  border-radius: 20rpx;
+}
+
+.order view{
+  padding-bottom: 20rpx;
+}
+
+.order view:last-child{
+  padding: 0;
+}
+.wb {
+  text-align: center;
+  margin: 50rpx 0;
+  font-weight: 500;
+  color: #6a6a6a;
+}

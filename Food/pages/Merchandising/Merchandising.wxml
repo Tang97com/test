@@ -1,0 +1,32 @@
+<view class="Merchandising">
+  <view class="CommodityContent">
+    <view class="Content_vtabs">
+      <mp-vtabs vtabs="{{vtabs}}" activeTab="{{activeTab}}" bindtabclick="onTabCLick" bindchange="onChange" class="text"
+        tab-bar-class="vtabs">
+        <block wx:for="{{vtabs}}" wx:key="title">
+          <mp-vtabs-content tab-index="{{index}}">
+            <view class="vtabs-content-item">
+              <view class="food">
+                <view>
+                  <van-uploader file-list="{{ fileList }}" max-count="1" bind:after-read="afterRead" />
+                </view>
+                <view class="Introduction">
+                  <span>{{item.title}}+爆款特惠</span>
+                  <text>商家介绍主要配料主要配料</text>
+                  <view class="iconfont">
+                    <text>￥14.90</text>
+                    <i class="ahh iconjia-copy"></i>
+                  </view>
+                </view>
+              </view>
+              <view class="increase">
+                <i class="ahh iconjia"></i>
+              </view>
+            </view>
+          </mp-vtabs-content>
+        </block>
+      </mp-vtabs>
+    </view>
+    <view class="AddToButton"><van-button plain hairline type="primary">添加分类</van-button></view>
+  </view>
+</view>

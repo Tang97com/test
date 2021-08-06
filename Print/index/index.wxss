@@ -1,0 +1,47 @@
+.serverBlock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.svrItem {
+  text-align: center;
+  box-sizing: border-box;
+  border: 1rpx solid #e1e1e1;
+  border-radius: 10rpx;
+  margin: 40rpx 0 0 40rpx;
+  padding: 40rpx 0;
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #fff;
+}
+.svrItem .ahh {
+  font-size: 60rpx;
+  color: #2F91FF;
+}
+.svrItem text {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #999;
+}
+.role{
+  box-sizing: border-box;
+  /* border-radius: 20rpx; */
+  background-color: #fff;
+  /* margin: 40rpx auto; */
+}
+.roleBox {
+  color: #6a6a6a;
+  padding: 20rpx 0;
+  font-size: 28rpx;
+  width: 33.3%;
+  font-weight: 500;
+  /* background-color: red; */
+}
+.roleBox .ahh {
+  color: #2F91FF;
+  font-size: 50rpx;
+}
+.roleBox .iconshangjiaruzhu {
+  font-size: 58rpx;
+}

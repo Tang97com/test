@@ -1,0 +1,9 @@
+<view class="bottom">
+  <view class="tab" wx:for="{{tabItem}}" wx:key="index" id="{{item.id}}" bindtap="switchRouter">
+    <view class="tabContent {{item.active}}">
+      <i class="{{item.cls}}"></i>
+      <view class="redyuan" wx:if="{{item.show}}">{{item.num}}</view>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>

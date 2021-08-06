@@ -1,0 +1,60 @@
+<import src="/common/PersonCenter/PersonCenter.wxml" />
+<view class="content">
+  <view wx:if="{{ active === 0 }}">
+    <view class="topBackground"></view>
+    <view class="box">
+      <view class="city van-hairline--bottom" bind:tap="onBottomPop">
+        <i class="ahh iconlocation ahhPosition"></i>
+        <text>{{current_schoolName}}</text>
+      </view>
+      <view class="box_time flex-between van-hairline--bottom">
+        <view>
+          <text class="rz_title">入住</text>
+          <text>{{startdate}}</text>
+        </view>
+        <view>
+          <text class="rz_title">离店</text>
+          <text>{{enddate}}</text>
+        </view>
+        <view bind:tap="onDisplay">
+          <text> 共{{day}}晚 </text>
+          <i class="ahh iconxiangyou"></i>
+        </view>
+      </view>
+      <view class="box_serch" bindtap="jumpSearchPage">
+        <text>搜索</text>
+        <text class="search_title">搜索酒店/地名</text>
+      </view>
+      <van-button type="info" block bindtap="serchHotel">查找酒店</van-button>
+    </view>
+    <view class="fjtj">附近推荐</view>
+    <view class="list">
+      <jdList bind:jumpDetail="jumpDetail"></jdList>
+    </view>
+    <view class="load_text">没有数据啦！</view>
+  </view>
+  <view wx:if="{{ active === 1 }}">
+    <template is="PersonCenter" data="{{iconItem, Icon, hasUserInfo, userInfo, TypesOf}}"></template>
+  </view>
+  <view wx:if="{{ active === 2 }}">
+    <template is="PersonCenter" data="{{iconItem, Icon, hasUserInfo, userInfo, TypesOf}}"></template>
+  </view>
+</view>
+
+<view>
+  <van-tabbar active="{{ active }}" bind:change="onChange">
+    <van-tabbar-item icon="home-o">酒店预定</van-tabbar-item>
+    <van-tabbar-item icon="shop-o" bind:tap="hotelRegister">商家</van-tabbar-item>
+    <van-tabbar-item icon="manager-o" bindtap="NoClick">我的</van-tabbar-item>
+  </van-tabbar>
+</view>
+<view wx:if="{{flag}}">
+  <view class="Mask" bindtap="changeFlag"></view>
+  <pop nodes="{{protocol}}" bind:closer="changeFlag"></pop>
+</view>
+
+<block>
+  <van-calendar show="{{ show }}" type="range" bind:close="onClose" bind:confirm="onConfirm" />
+<van-toast id="van-toast" />
+
+</block>

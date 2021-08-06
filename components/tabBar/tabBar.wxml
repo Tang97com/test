@@ -1,0 +1,9 @@
+<view class="tab-bar">   
+  <block wx:for="{{tabBar}}" wx:key="{{tabBar.pagePath}}">    
+  <!-- data-url 传递参数，可以在navigateDetail方法中的e.currentTarget.dataset.url获取，在tabbar.js代码块中可以看到 -->
+    <view class="section_item" bindtap="navigateDetail" data-url="{{item.pagePath}}">  
+        <image class="section_image" src="{{item.iconPath}}"></image>  
+        <text class="section_title">{{item.text}}</text>
+    </view>
+  </block> 
+</view>

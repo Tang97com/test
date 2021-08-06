@@ -1,0 +1,33 @@
+<swiper imgList="{{imgList}}"></swiper>
+<view class="container">
+  <view class="role flex-around shadow">
+    <view class="roleBox flexCenterColum vivify popIn delay-100" id="1" bindtap="JumpPage">
+      <i class="ahh iconuser"></i>
+      <text>用户</text>
+    </view>
+    <view class="roleBox flexCenterColum vivify popIn delay-200" id="2" bindtap="JumpPage">
+      <i class="ahh iconshangjia"></i>
+      <text>{{storeidf? '商家' : '商家'}}</text>
+    </view>
+    <view class="roleBox flexCenterColum vivify popIn delay-300" id="3" bindtap="JumpPage">
+      <i class="ahh icondaiquhuo"></i>
+      <text>{{marikidf? '配送员' : '申请配送员'}}</text>
+    </view>
+  </view>
+  <!-- 服务板块 -->
+  <view class="serverBlock ">
+     <view bindtap="changeServer"  id="{{item.id}}"
+     class="vivify fadeIn svrItem shadow delay-{{index}}00 flexCenterColum" 
+     wx:for="{{list}}" wx:key="index">
+      <i class="{{item.cls}}"></i> 
+      <text>{{item.title}}</text>
+     </view>
+  </view>
+
+  <!-- 组件板块 -->
+  <van-action-sheet description="选择一个打印店铺" show="{{ show }}" actions="{{ actions }}" bind:close="onClose"  bind:select="onSelect"/>
+</view>
+
+<view>
+   
+</view>

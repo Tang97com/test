@@ -1,0 +1,57 @@
+.header {
+  height: 360rpx;
+  width: 100%;
+}
+.role{
+  /* width: 95%; */
+  /* padding: 20rpx; */
+  box-sizing: border-box;
+  /* border-radius: 20rpx; */
+  background-color: #fff;
+  /* margin: 40rpx auto; */
+}
+.roleBox {
+  color: #6a6a6a;
+  padding: 20rpx 0;
+  font-size: 28rpx;
+  width: 33.3%;
+  font-weight: 500;
+  position: relative;
+  /* background-color: red; */
+}
+.roleBox .ahh {
+  color: #2F91FF;
+  font-size: 50rpx;
+}
+.roleBox .iconshangjiaruzhu {
+  font-size: 58rpx;
+}
+.storebox {
+  margin-bottom: 40rpx;
+}
+.redyuan {
+  position: absolute;
+  top: 10rpx;
+  left: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
+  font-size: 24rpx;
+  line-height: 35rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgb(255,0,0);
+}
+
+.postCart {
+  /* width: 40px;
+  height: 40px; */
+  color: rgb(255, 72, 72);
+  position: fixed;
+  bottom: 100rpx;
+  right: 40rpx;
+}
+
+.icongouwuche {
+  font-size: 60rpx;
+}

@@ -1,0 +1,19 @@
+<view class="container ">
+   <view class="imgbox"  wx:if="{{imgList}}" wx:for="{{imgList}}" wx:key="index">
+     <image class="images" mode="widthFix" src="{{item.path}}"></image>
+     <view class="cotactnum flex-around">
+      <i class="expand ahh iconjian" bindtap="jian" id="{{index}}"></i>
+      <text class="wbtitle">打印份数：{{item.num}}</text>
+      <i class="expand ahh iconjia" bindtap="add" id="{{index}}"></i>
+    </view>
+   </view>
+
+   <view class="addimg shadow" bindtap="addimg">
+       <i class="ahh icontubiaolunkuo-"></i>
+       <text>添加图片</text>
+   </view>
+</view>
+
+<view class="printPage" bindtap="printPage">
+  确定打印
+</view>

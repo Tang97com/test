@@ -1,0 +1,24 @@
+<view wx:if="{{flag}}" class="order shadow" wx:for="{{list}}" wx:key="index">
+  <view>
+    <text>订单编号：{{item.order_number}}</text>
+  </view>
+  <view>
+    <text>订单时间：{{item.created_at}}</text>
+  </view>
+  <view>
+    <text>订单状态：{{item.type}}</text>
+    <progress class="pros" wx:if="{{item.type === '未接单'}}" percent="0" color="#2F91FF" stroke-width="10" active
+      show-info active-mode="forwards" />
+    <progress class="pros" wx:if="{{item.type === '已接单'}}" percent="25" color="#2F91FF" stroke-width="10" active
+      show-info active-mode="forwards" />
+    <progress class="pros" wx:if="{{item.type === '清洗完成'}}" percent="50" color="#2F91FF" stroke-width="10" active
+      show-info active-mode="forwards" />
+    <progress class="pros" wx:if="{{item.type === '配送中'}}" percent="75" color="#2F91FF" stroke-width="10" active
+      show-info active-mode="forwards" />
+    <progress class="pros" wx:if="{{item.type === '已完成'}}" percent="100" color="#2F91FF" stroke-width="10" active
+      show-info active-mode="forwards" />
+  </view>
+</view>
+<view wx:if="{{!flag}}">
+   <view class="wb vivify popInTop"> 暂无洗衣进度哦</view>
+</view>

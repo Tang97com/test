@@ -1,0 +1,64 @@
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.addimg {
+  margin: 20rpx 0 140rpx 0;
+  background-color: #fff;
+  padding: 40rpx 0;
+  justify-content: center;
+  display: flex;
+  border: 1rpx solid #e1e1e1;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.addimg .ahh {
+  font-weight: 500;
+  font-size: 50rpx;
+  margin: 0 10rpx;
+}
+
+.printPage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 120rpx;
+  line-height: 120rpx;
+  background-color: #2F91FF;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.imgbox {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 40rpx;
+  padding: 20rpx;
+  position: relative;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.images {
+  vertical-align: middle;
+}
+
+.cotactnum {
+  width: 45%;
+  margin: 20rpx auto 0 auto;
+  color: #2F91FF;
+}
+
+.wbtitle {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.iconjian, .iconjia {
+  font-size: 40rpx;
+}

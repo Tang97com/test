@@ -1,0 +1,64 @@
+/* page{
+  background-color: #fff;
+} */
+.list {
+  background-color: #fff;
+  width: 94%;
+  box-sizing: border-box;
+  margin: 0 auto 20rpx auto;
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #262626;
+  border-radius: 10rpx;
+}
+.list:first-child {
+  margin-top: 20rpx;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.iconjiudian {
+  font-size: 50rpx;
+  color: #d81e06;
+}
+.content {
+  font-size: 30rpx;
+  font-weight: 500;
+  width: 78%;
+  display: flex;
+  align-items: center;
+}
+.state_text {
+  color: #C76D55;
+}
+.bottom {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.bt_content {
+  height: 100rpx;
+  margin-left: 20rpx;
+  justify-content: space-around;
+}
+.price {
+  color: #979797;
+}
+.time {
+  color: #080808;
+}
+.vant van-button{
+  padding: 10rpx;
+}
+.backHome{
+  position: fixed;
+  bottom: 20rpx;
+  width: 100%;
+  display: flex;
+}
+.Homepage {
+  display: block;
+  margin: auto;
+}

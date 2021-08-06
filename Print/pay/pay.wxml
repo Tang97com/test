@@ -1,0 +1,46 @@
+<view class="container">
+  <view class="item flex-between" wx:for="{{file}}" wx:key="index">
+    <text>{{item.name}}</text><text>{{item.num}}个 * {{item.price}}元 = {{item.num * item.price}}元</text>
+  </view>
+  <view class="item flex-between" wx:for="{{item}}" wx:key="index">
+    <text>{{item.title}}</text>
+    <text>{{item.num ? item.num + '元' : item.str}}</text>
+  </view>
+  <view class="item flex-between" wx:for="{{orderSelect}}" wx:key="index">
+    <text>{{item.name}}</text>
+    <radio-group class="radio_group" bindchange="radioChange" id="{{index}}">
+      <radio value="{{item.title}}" checked="" />{{item.title}}
+      <radio value="{{item.title2}}" checked="true" />{{item.title2}}
+    </radio-group>
+  </view>
+
+  <view class="address shadow" bindtap="selectAddres">
+    <view wx:if="{{!current_address}}" class="flexCenterColum">
+      <i class="ahh icontianjiawenjian"></i>
+      <text>添加地址</text>
+    </view>
+    <view wx:else class="showAddress">
+      <view class="show_current_address">
+        <view><i class="ahh iconuser"></i>{{current_address.name}}</view>
+        <view><i class="ahh iconshouji-copy"></i>{{current_address.tel}}</view>
+        <view>
+          <i class="ahh iconxingbie"></i>
+          {{current_address.gender === 1 ? '男' : '女'}}
+        </view>
+      </view>
+      <view><i class="ahh iconlocation"></i>{{current_address.school_name}}{{current_address.address}}</view>
+    </view>
+  </view>
+
+  <view style="text-align: center">
+    <radio checked bindtap="showmessage">用户协议</radio>
+  </view>
+</view>
+
+<view class="pay" bindtap="payMoney">支付</view>
+<van-toast id="van-toast" />
+
+<view wx:if="{{flag}}">
+  <view class="Mask" bindtap="showmessage"></view>
+  <pop nodes="{{nodes}}" bind:closer="showmessage"></pop>
+</view>

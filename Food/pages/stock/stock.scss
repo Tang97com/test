@@ -1,0 +1,43 @@
+.content {
+  .CommodityName {
+    padding: 40rpx 35rpx 20rpx 35rpx;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #000;
+  }
+  // 商品详情/开关
+  .DetailAndswitch {
+    padding-top: 20rpx;
+    padding: 40rpx 40rpx 0rpx 40rpx;
+    .scroll_view {
+      display: flex;
+      height: 100rpx;
+      width: 100%;
+      justify-content: space-between;
+      line-height: 100rpx;
+      margin-top: 40rpx;
+      text {
+        line-height: 100rpx;
+      }
+      .van-switch {
+        margin-top: 10rpx;
+      }
+    }
+  }
+  // 保存按钮
+  .SaveButton {
+    width: 100%;
+    position: fixed;
+    bottom: 70rpx;
+    left: 0;
+    text-align: center;
+    button {
+      width: 80%;
+      background: rgba(25, 137, 250, 0.9);
+      border-radius: 50rpx;
+      text {
+        color: #fff;
+      }
+    }
+  }
+}

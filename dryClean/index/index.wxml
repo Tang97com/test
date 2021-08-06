@@ -1,0 +1,56 @@
+<block>
+  <view class="header">
+    <swiper imgList="{{imgList}}"></swiper>
+  </view>
+  <view class="role flex-around shadow">
+    <!-- <view class="roleBox flexCenterColum vivify popIn" >
+      <i class="ahh iconuser"></i>
+      <text class="">用户</text>
+    </view> -->
+    <view class="roleBox flexCenterColum vivify popIn" id="store" bindtap="gotoRouter">
+      <i class="ahh iconshangjiaruzhu"></i>
+      <view>商家</view>
+    </view>
+    <!-- <view class="roleBox flexCenterColum vivify popIn" id="cart" bindtap="gotoRouter">
+      <i class="ahh icongouwuche"></i>
+      <view class="redyuan" wx:if="{{num}}">{{num}}</view>
+      <text>购物车</text>
+    </view> -->
+    <view class="roleBox flexCenterColum vivify popIn" id="marik" bindtap="gotoRouter">
+      <i class="ahh icondaiquhuo"></i>
+      <text wx:if="{{marikType}}">配送员</text>
+      <text wx:else>申请配送员</text>
+    </view>
+  </view>
+  <view class="storebox">
+    <store bind:showitems="showitems" bind:navbarTap="navbarTap" bind:selectShop="onClose"
+      storeData="{{storeData}}" menu="{{menu}}" storeFirstName="{{storeFirstName}}"></store>
+  </view>
+</block>
+
+<block>
+  <view wx:if="{{StoreFlag}}">
+    <view class="Mask" bindtap="StoreChangeSchoolSelect"></view>
+    <selector list="{{Store}}" bind:determine="Storedetermine" bind:cancal="Storecancal"></selector>
+  </view>
+</block>
+
+<view class="postCart" id="cart" bindtap="gotoRouter">
+  <view class="redyuan" wx:if="{{num}}">{{num}}</view>
+  <i class="ahh icongouwuche"></i>
+</view>
+
+<van-action-sheet
+  show="{{ show }}"
+  actions="{{ actions }}"
+  bind:close="onClose"
+  bind:select="onSelect"
+  description="请选择已入驻的店铺"
+/>
+
+<view>
+  <van-tabbar active="{{ active }}" >
+    <van-tabbar-item icon="manager-o" id="user" bindtap="gotoRouter">我的</van-tabbar-item>
+    <van-tabbar-item icon="shop-o" info="3" bind:change="onChange">购物车</van-tabbar-item>
+  </van-tabbar>
+</view>

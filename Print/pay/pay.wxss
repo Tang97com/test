@@ -1,0 +1,63 @@
+.container{
+  margin-bottom: 140rpx;
+}
+.item {
+  background-color: #fff;
+  padding: 20rpx 40rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 28rpx;
+  color: #666;
+}
+.item text:first-child {
+  color: #111;
+}
+.pay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 40rpx;
+  font-weight: 600;
+  background-color: #66AAFF;
+}
+.address {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx 40rpx;
+  background-color: #fff;
+  margin: 40rpx auto;
+  font-size: 28rpx;
+  color: #7B93F0; 
+}
+
+.address .ahh {
+   font-size: 38rpx;
+}
+.showAddress {
+  color: #AC207B;
+}
+.show_current_address{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.showAddress view:last-child {
+  margin: 0;
+}
+.show_current_address view {
+  display: flex;
+  align-items: center;
+  margin-right: 40rpx;
+}
+.show_current_address view  .iconxingbie {
+  font-size: 28rpx;
+  margin-right: 10rpx;
+}
+.radio_group {
+  height: 40rpx;
+  line-height: 40rpx;
+}

@@ -1,0 +1,22 @@
+<view class="top">
+  <view wx:for="{{topText}}" wx:key="index">
+    <text>{{item}}</text>
+    <i class="ahh iconpaixu"></i>
+  </view>
+</view>
+<view class="list_card" bindtap="gotoDetail" id="{{item.id}}" wx:for="{{jdList}}" wx:key="index">
+  <view>
+    <van-image width="250rpx" height="200rpx" fit="scale-down" src="{{item.url1}}" />
+  </view>
+  <view class="flex-colum list_content" bind:tap="jumpDetail" id="{{item.id}}">
+    <text class="content_top van-multi-ellipsis--l2">{{item.name}}</text>
+    <text class="content_mid">{{item.address}}</text>
+    <view class="bottom">
+      <text class="content_price">￥<text class="money">{{item.money}}</text>起</text>
+      <view class="yhq">
+        <i class="ahh iconfanquan"></i>
+        <text>返￥10</text>
+      </view>
+    </view>
+  </view>
+</view>

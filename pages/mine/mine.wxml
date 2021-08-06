@@ -1,0 +1,12 @@
+<import src="/common/PersonCenter/PersonCenter.wxml" />
+<view>
+  <template is="PersonCenter" data="{{ icon, hasUserInfo,userInfo}}"></template>
+  <button open-type="contact" class="btns">联系客服</button>
+  <view class="tips flexCenterColum">
+    <text>客服电话：{{phone}}</text>
+    <view class="server_time">{{service_time}}</view>
+    <view bindtap="phone" class="phone">立即拨打</view>
+  </view>
+</view>
+
+

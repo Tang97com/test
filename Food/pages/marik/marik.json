@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mscard": "/components/mscard/mscard",
+    "selector" : "/components/selector/selector"
+  }
+}

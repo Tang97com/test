@@ -1,0 +1,27 @@
+@import '/common/drycleanOrderDetail/drycleanOrderDetail.wxss';
+
+.pop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20rpx 40rpx;
+  background-color: #fff;
+  z-index: 2;
+  border-radius: 20rpx;
+}
+
+.inpts {
+  padding: 20rpx;
+  color: #666;
+  border: 1rpx solid #eee;
+}
+
+.pop_input {
+  margin: 40rpx 0;
+}
+
+.btnGrounp {
+  margin: 0 0 20rpx 0;
+}

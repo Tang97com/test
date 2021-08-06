@@ -1,0 +1,4 @@
+<view class="container">
+  <card list="{{list}}" state="{{state}}" idf="{{idf}}" bind:jumpDetail="goToDeTetail"></card>
+  <view class="bottomTitle vivify popIn" wx:if="{{flag}}">~暂无数据~</view>
+</view>

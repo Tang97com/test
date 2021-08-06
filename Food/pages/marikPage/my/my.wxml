@@ -1,0 +1,14 @@
+<import src="/common/PersonCenter/PersonCenter.wxml" />
+<view>
+  <template is="PersonCenter" data="{{Icon, iconItem, hasUserInfo, userInfo}}"></template>
+
+  <view class="bottom flex-around">
+      <view class="hall" bindtap="senderHall">配送大厅</view>
+      <view class="markMine">我的</view>
+  </view>
+</view>
+
+<view wx:if="{{popflag}}">
+  <view class="Mask" bindtap="changeFlag"></view>
+  <pop nodes="{{nodes}}" bind:closer="changeFlag"></pop>
+</view>

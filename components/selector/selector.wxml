@@ -1,0 +1,12 @@
+<picker-view class="picker-view"  indicator-style="height: 50px;" value="{{value}}" bindchange="bindChange">
+  <view class="btnsGroup">
+    <text bindtap="cancal">取消</text>
+    <text bindtap="determine">确定</text>
+  </view>
+  <picker-view-column>
+    <view class="picker-view-item"  wx:for="{{list}}" wx:key="index" >
+      <text wx:if="{{item.name}}">{{item.name}}</text>
+      <text wx:else>{{item.title}}</text>
+    </view>
+  </picker-view-column>
+</picker-view>

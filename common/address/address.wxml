@@ -1,0 +1,34 @@
+<view wx:if="{{address}}" class="main">
+   <view class="box shadow " wx:for="{{address}}" wx:key="index">
+      <view class="defalut flex-between">
+         <view>
+            <text>{{item.name}}</text>
+            <text class="sexCls">{{item.gender}}</text>
+         </view>
+         <radio id="{{item.id}}" bindtap="changecheck" checked="{{item.is_default}}">默认地址</radio>
+      </view>
+      <view class="phone">{{item.tel}}</view>
+      <text>{{item.school_name}}{{item.detail_address}}</text>
+      <view class="operation">
+         <view bindtap="del" id="{{item.id}}">
+            <i class="ahh iconshanchu"></i>
+            <text>删除</text>
+         </view>
+         <view bindtap="edit" id="{{item.id}}">
+            <i class="ahh iconbianji"></i>
+            <text>编辑</text>
+         </view>
+         <view wx:if="{{payHTML}}" bindtap="confirm"  data-obj="{{item}}">
+            <i class="ahh iconqueren-"></i>
+            <text>确认选择</text>
+         </view>
+      </view>
+   </view>
+   <button class="custBtn " bindtap="addAddress">新增收货地址</button>
+</view>
+
+<view wx:else class="noAddressBox flex-column-center">
+   <image src="/static/img/address_icon.png"></image>
+   <text>你目前还没有添加收货地址</text>
+   <button class="custBtn" bindtap="addAddress">点击添加</button>
+</view>

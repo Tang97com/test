@@ -1,0 +1,50 @@
+<view class="tenants">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <view class="item flex-between">
+      <text>店铺名称：</text>
+      <input type="text" name="shopName" id="" placeholder="请输入店铺名称" />
+    </view>
+
+    <view class="item flex-between">
+      <text>店铺地址：</text>
+      <input type="text" name="shopeaddress"  placeholder="店铺地址请具体到门牌号" />
+    </view>
+
+    <view class="item flex-between">
+      <text>联系人：</text>
+      <input type="text" name="name"  placeholder="联系人" />
+    </view>
+
+    <view class="item flex-between">
+      <text>联系方式：</text>
+      <input type="number" name="tel"  placeholder="联系方式" />
+    </view>
+
+    <view class="item classification">
+      <text>选择店铺分类(最多选择3个)：</text>
+      <view class="selected">已选择：<span wx:for="{{foodSelected}}"  wx:key="index" data-index="{{index}}" data-item="{{item}}" catchtap="Deselect">{{item}}</span></view>
+      <view class="select">
+        <span wx:for="{{foodClassFication}}" id="{{index}}" wx:key="index" data-item="{{item}}" catchtap="{{!isCatchtap?'ChooseCategory':''}}">{{item}}</span>
+      </view>
+    </view>
+
+    <view class="uploadText">上传营业执照</view>
+    <view class="raco" bindtap="uploadImg">
+      <image src="{{imgurl}}" mode="aspectFill">
+      </image>
+    </view>
+
+    <view class="uploadText">上传食品安全许可证</view>
+    <view class="raco" bindtap="uploadImages">
+      <image src="{{imageUrl}}" mode="aspectFill">
+      </image>
+    </view>
+    
+
+    <view class="btn-grounp flex-around">
+      <button class="btn-qd" formType="submit">提交</button>
+      <button class="btn-ct" formType="reset">重填</button>
+    </view>
+
+  </form>
+</view>

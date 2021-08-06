@@ -1,0 +1,98 @@
+<template name="drycleanOrderDetail">
+  <view class="sender shadow box">
+   <view class="boxInfo">
+     <view class="boxInfo-View">
+       <text>{{list.user_name}}</text>
+       <text wx:if="{{list.user_gender === 1}}">男</text>
+       <text wx:else>女</text>
+       <text>{{list.user_tel}}</text>
+     </view>
+     <view class="boxInfo-View">
+       <text>{{list.user_school}}{{list.user_address}}</text>
+     </view>
+     <i class="tswb ahh iconTheSender-01"></i>
+   </view>
+   <view class="boxContent flex-column-around">
+     <view>
+       <text>配送方式</text>
+       <text>{{list.delivery_mode}}</text>
+     </view>
+     <view>
+       <text>配送时间</text>
+       <text>{{list.delivery_time}}</text>
+     </view>
+   </view>
+</view>
+
+<view class="received shadow box">
+  <view class="boxInfo">
+     <view class="boxInfo-View">
+       <text>{{list.store_per}}</text>
+       <text>{{list.store_name}}店</text>
+       <text>{{list.store_tel}}</text>
+     </view>
+     <view class="boxInfo-View">
+       <text>{{list.store_address}}</text>
+     </view>
+     <i class="shdz ahh iconshoujian"></i>
+   </view>
+   <view class="boxContent flex-column-around">
+     <view>
+       <text>货物类别</text>
+       <text>衣物</text>
+     </view>
+     <view>
+       <text>衣物件数</text>
+       <text>{{list.num}}</text>
+     </view>
+     <view>
+       <text class="bzxx">备注信息</text>
+       <text wx:if="{{list.remarks}}" class="content">{{list.remarks}}</text>
+       <text wx:else class="content">暂无备注信息</text>
+     </view>
+   </view>
+</view>
+
+<view class="order shadow box ">
+  <view>
+    <text>订单编号</text>
+    <text>{{list.order_number}}</text>
+  </view>
+  <view>
+    <text>支付时间</text>
+    <text>{{list.created_at}}</text>
+  </view>
+  <view>
+    <text>订单金额</text>
+    <text>{{list.total}}元</text>
+  </view>
+  <view>
+    <text>配送费</text>
+    <text>{{list.fee}}元</text>
+  </view>
+</view>
+
+<button class="btn" id="{{list.id}}" bindtap="usercleanOver" wx:if="{{clean === '确认完成'}}">确认完成</button>
+<button class="btn" id="{{list.id}}" bindtap="cleanOver" wx:if="{{clean === '清洗完成'}}">清洗完成</button>
+<button class="btn" id="{{list.id}}" bindtap="getOrder" wx:if="{{recev === '接单'}}">立即接单</button>
+<button class="gren btn" id="{{list.id}}" data-ordernum="{{list.order_number}}" bindtap="OrderBack" wx:if="{{cancel === '取消'}}">取消订单</button>
+<button class="gren btn" id="{{list.id}}" bindtap="Delivered" wx:if="{{cancel === '已送达'}}">已送达</button>
+<view wx:if="{{waitOrder === '待取件'}}" class="btn_doub flex-around">
+   <view bindtap="OrderConfir">确认收到</view>
+   <view bindtap="OrderBack">取消订单</view>
+</view>
+
+<view wx:if="{{flags}}" >
+    <view class="mask"></view>
+    <view class="maskContent vivify fadeIn">
+      <input class="inputs" maxlength="10" bindblur="getValue" type="text" placeholder="请输入安全码" />
+      <view class="btns">
+        <view bindtap="determine">确定</view>
+        <view bindtap="cancel">取消</view>
+      </view>
+    </view>
+</view>
+
+<view class="Mask" wx:if="{{mask}}"></view>
+
+</template>

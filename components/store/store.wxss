@@ -1,0 +1,70 @@
+@import '/iconfont/iconfont.wxss';
+.left-navbar{
+  position:absolute;
+  left:0;
+  width:25%;
+  /* height:90%; */
+  background-color:#eee;
+  font-size:15px;
+}
+.left-navbar view{
+  height:80rpx;
+  line-height: 80rpx;
+  text-align:center;
+}
+.active{
+  /* background-color:#fff; */
+  color:#2F91FF;
+  font-size: 28rpx;
+}
+
+.right-navbar{
+  width: 75%;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+
+.img-banner{
+  height:150rpx;
+  width:100%;
+}
+.goods-list{
+  margin-top:10rpx;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+}
+.shopitem {
+  margin-bottom: 20rpx;
+}
+.goods-title{
+  width:100%;
+  font-size:28rpx;
+  font-weight: 500;
+  padding-left:20rpx;
+  display:flex;
+  flex-wrap:wrap;
+}
+.goods{
+  width:150rpx;
+  font-size:14px;
+  margin:15rpx;
+  text-align:center;
+}
+.img{
+  width:140rpx;
+  height:140rpx;
+}
+
+.text-hidden {
+  background-color: #2F91FF;
+  color: #fff;
+  overflow: hidden;
+  display: -webkit-box;
+  white-space: normal ;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,90 @@
+
+/* 图片显示 */
+.Orderimg {
+  padding: 20rpx;
+  text-align: center;
+  padding-top: 40rpx;
+  image {
+    max-height: 350rpx;
+  }
+}
+
+
+/* 订单显示 */
+.displayOrders {
+  padding: 50rpx;
+}
+
+.OrderStatus {
+  height: 120rpx;
+  border: 1rpx solid #000;
+  text-align: center;
+}
+
+.OrderStatus text {
+  line-height: 120rpx;
+}
+
+.Features {
+  display: flex;
+  padding: 10%;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.Features view {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  i {
+    font-size: 55rpx;
+  }
+}
+
+
+// 商家订单界面
+
+.StoreOrder {
+  padding: 30rpx 40rpx 0 40rpx;
+  .StoreCommodity {
+    padding-bottom: 30rpx;
+    view {
+      .CommodityDetail {
+        margin: 10rpx 0 10rpx 0;
+        display: flex;
+        text {
+          margin-left: 20rpx;
+          width: 50%;
+          line-height: 150rpx;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .UserOrderStatus {
+    width: 100%;
+    text-align: center;
+    padding-top: 40rpx;
+    view {
+      border: 1rpx solid #000;
+      height: 120rpx;
+      line-height: 120rpx;
+    }
+  }
+  .StoreFeatures {
+    padding-top: 40rpx;
+    .features {
+      display: flex;
+      justify-content: space-between;
+      view {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        i {
+          font-size: 55rpx;
+        }
+      }
+    }
+  }
+}

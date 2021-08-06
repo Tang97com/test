@@ -1,0 +1,51 @@
+@import '/iconfont/iconfont.wxss';
+.top {
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #66a6ff;
+  color: #fff;
+}
+.list_card {
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.list_content {
+  margin-left: 30rpx;
+}
+.list_content text {
+  margin-bottom: 20rpx;
+}
+.content_top {
+  /* height: 62rpx; */
+  overflow: hidden;
+}
+.content_mid {
+  width: 400rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.money {
+  color: rgb(255, 16, 16);
+  font-size: 40rpx;
+  font-weight: 600;
+}
+.flex-colum {
+  display: flex;
+  flex-direction: column;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.yhq text{
+  font-size: 28rpx;
+  color: #666;
+}

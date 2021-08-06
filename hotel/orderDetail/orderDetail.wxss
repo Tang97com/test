@@ -1,0 +1,75 @@
+.orderDetail {
+  padding: 22rpx 18rpx 0;
+  background: #eee;
+  height: 100vh;
+}
+
+.bold {
+  padding-left: 20rpx;
+  font-weight: bold;
+}
+
+.orderNumber {
+  box-sizing: border-box;
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+
+  padding: 0 16rpx;
+  margin-bottom: 22rpx;
+  background: #fff;
+  border-radius: 26rpx;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  height: 200rpx;
+  padding: 0 16rpx;
+  background: #fff;
+  border-radius: 26rpx;
+}
+
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  
+  margin-top: 22rpx;
+  padding: 20rpx 16rpx 30rpx;
+  background: #fff;
+  border-radius: 26rpx;
+}
+
+.detail text {
+  margin-bottom: 30rpx;
+}
+
+.code {
+  position: relative;
+}
+
+.securityCode {
+  display: inline-block;
+  position: absolute;
+  top: 4rpx;
+  left: 200rpx;
+
+  padding: 0 60rpx;
+  height: 60rpx;
+  background: rgb(243, 243, 243);
+  border-radius: 26rpx;
+}
+
+.detail text {
+  flex: 1;
+  padding-top: 20rpx;
+}
+
+.name,
+.address .bold {
+  word-wrap: normal;
+  line-height: 56rpx;
+}

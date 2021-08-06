@@ -1,0 +1,112 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/mine/mine",
+    "pages/login/login",
+    "view/test/test",
+    "Print/index/index",
+    "common/marikRegeist/marikRegeist",
+    "common/addAreaAddress/addAreaAddress",
+    "common/PersonCenter/PersonCenter",
+    "common/address/address",
+    "common/advice/advice",
+    "common/myIncome/myIncome",
+    "common/takeMoney/takeMoney",
+    "common/drycleanOrderDetail/drycleanOrderDetail",
+    "dryClean/index/index",
+    "dryClean/cart/cart",
+    "dryClean/my/my",
+    "dryClean/store/store",
+    "dryClean/pay/pay",
+    "dryClean/marik/marik",
+    "dryClean/marikPage/my/my",
+    "dryClean/marikPage/order/order",
+    "dryClean/marikPage/orderDetail/orderDetail",
+    "dryClean/userPage/userorder/userorder",
+    "dryClean/userPage/userorderDetail/userorderDetail",
+    "dryClean/userPage/progress/progress",
+    "dryClean/storePage/storeOrderDetail/storeOrderDetail",
+    "dryClean/storePage/storeOrder/storeOrder",
+    "dryClean/storePage/storeRegister/storeRegister",
+    "Print/userPage/mine/mine",
+    "Print/storePage/mine/mine",
+    "Print/marikPage/mine/mine",
+    "Print/printPage/idCardPrint/idCardPrint",
+    "Print/printPage/imgPrint/imgPrint",
+    "Print/printPage/wjPrint/wjPrint",
+    "Print/printPage/plCopy/plCopy",
+    "Print/printPage/imgPlprint/imgPlprint",
+    "Print/pay/pay",
+    "view/imgUpload/imgUpload",
+    "view/login/login",
+    "hotel/index/index",
+    "hotel/detail/detail",
+    "hotel/Hotel_inventory/Hotel_inventory",
+    "hotel/search/search",
+    "hotel/pay/pay",
+    "hotel/order/order",
+    "components/jdList",
+    "components/jdList/jdList",
+    "hotel/findhotel/findhotel",
+    "test/test",
+    "hotel/orderDetail/orderDetail",
+    "hotel/Merchant/hotelRegister/hotelRegister"
+  ],
+  "subPackages": [
+    {
+      "root": "Food",
+      "name": "food",
+      "pages": [
+        "pages/index/index",
+        "pages/search/search",
+        "pages/ordering/ordering",
+        "pages/Order/Order",
+        "pages/stock/stock",
+        "pages/administer/administer",
+        "pages/Merchandising/Merchandising",
+        "pages/searchDetail/searchDetail",
+        "pages/FoodRegister/FoodRegister",
+        "pages/marik/marik",
+        "page/marikPage/my/my",
+        "page/marikPage/order/order",
+        "page/marikPage/orderDetail/orderDetail",
+        "pages/Settlement/Settlement",
+        "pages/Settlement/Note/Note",
+        "pages/mslist/mslist"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#66a6ff",
+    "navigationBarTitleText": "下单校园",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#e1e1e1",
+    "selectedColor": "#2F91FF",
+    "borderStyle": "white",
+    "backgroundColor": "#FFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tab/index.png",
+        "selectedIconPath": "static/tab/index_select.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/tab/mine.png",
+        "selectedIconPath": "static/tab/mine_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于配送订单"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.custNav {
+  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+  height: 400rpx;
+  width: 100%;
+  position: relative;
+  color: #fff;
+}
+.box{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 100rpx;
+
+}
+
+.box-item{
+  display: flex;
+  flex-direction: column;
+  padding: 100rpx 0 0 0 ;
+  align-items: center;
+}
+
+.box-item .ahh{
+  font-size: 60rpx;
+}
+
+.mainBox{
+  position: relative;
+  background-color: #fff;
+  width: 95%;
+  margin: -40px auto 0 auto;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+}
+
+.swiper-tab{
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #e1e1e1;
+}
+
+.swiper-tab view{
+  text-align: center;
+  padding: 10rpx 40rpx;
+}
+
+.active{
+  background-color: #495aff;
+  color: #fff;
+  border-radius: 30rpx ;
+  translate: all .5;
+}
+
+.content-Box{
+  height: auto;
+}
+
+.scroll-box {
+  box-sizing: border-box;
+  height: auto;
+  padding: 20rpx 0 20rpx 40rpx;
+  width: 100%;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+.scrool-item .ahh {
+  color: #5D9FFF;
+  padding-right: 10rpx;
+}
+.scrool-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  width: 100%;
+  color: #999;
+  border-bottom: #d1d1d1 dotted 1rpx;
+  padding-right: 40rpx;
+  box-sizing: border-box;
+}
+.scrool-item .timers{
+  padding-left: 40rpx;
+}
+.moneyTitle {
+  color: #ee3322;
+}

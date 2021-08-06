@@ -1,0 +1,31 @@
+<view class="container">
+  <view wx:if="{{fileList}}" wx:for="{{fileList}}" wx:key="index" 
+  class="list vivify fadeIn shadow">
+    <view class="itemBox text-hidden">
+      <i class="ahh iconwenjian1"></i>
+      <text class="filename">{{item.name}}</text>
+    </view>
+    <view class="cotactnum flex-around">
+      <i class="expand ahh iconjian" bindtap="jian" id="{{index}}"></i>
+      <text>{{item.num}}</text>
+      <i class="expand ahh iconjia" bindtap="add" id="{{index}}"></i>
+    </view>
+    <i class="expand ahh iconshanchu" bindtap="delfile" id="{{index}}"></i>
+  </view>
+
+  <view class="addimg shadow" bindtap="addfile">
+    <i class="ahh icontianjiawenjian"></i>
+    <text>添加文件</text>
+  </view>
+</view>
+
+<view class="printPage" bindtap="printPage">
+  确定打印
+</view>
+
+<view wx:if="{{showPop}}" class="pop vivify popIn shadow">
+  <view bindtap="wechatFile">微信聊天文件</view>
+  <view bindtap="phoneFild" wx:if="{{state}}">手机图片/相册</view>
+</view>
+
+<view bindtap="closePop" class="Mask" wx:if="{{showPop}}"></view>

@@ -1,0 +1,46 @@
+.content .CommodityName {
+  padding: 40rpx 35rpx 20rpx 35rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #000;
+}
+
+.content .DetailAndswitch {
+  padding-top: 20rpx;
+  padding: 40rpx 40rpx 0rpx 40rpx;
+}
+
+.content .DetailAndswitch .scroll_view {
+  display: flex;
+  height: 100rpx;
+  width: 100%;
+  justify-content: space-between;
+  line-height: 100rpx;
+  margin-top: 40rpx;
+}
+
+.content .DetailAndswitch .scroll_view text {
+  line-height: 100rpx;
+}
+
+.content .DetailAndswitch .scroll_view .van-switch {
+  margin-top: 10rpx;
+}
+
+.content .SaveButton {
+  width: 100%;
+  position: fixed;
+  bottom: 70rpx;
+  left: 0;
+  text-align: center;
+}
+
+.content .SaveButton button {
+  width: 80%;
+  background: rgba(25, 137, 250, 0.9);
+  border-radius: 50rpx;
+}
+
+.content .SaveButton button text {
+  color: #fff;
+}

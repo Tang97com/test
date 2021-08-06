@@ -1,0 +1,14 @@
+<view class="container">
+   <view class="IDcardzm" bindtap="uploadZm">
+     <image mode="aspectFit" wx:if="{{!zm}}" src="/static/img/zm.png"></image>
+     <image wx:else src="{{zm}}"></image>
+   </view>
+   <view class="IDcardfm" bindtap="uploadFm">
+    <image mode="aspectFit" wx:if="{{!fm}}" src="/static/img/fm.png"></image>
+    <image wx:else src="{{fm}}"></image>
+   </view>
+</view>
+
+<view class="printPage" bindtap="printPage">
+  确定打印
+</view>

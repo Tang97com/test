@@ -1,0 +1,96 @@
+.main{
+  margin: 40rpx 0;
+  padding: 0 20rpx;
+  font-weight: 500;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+.box{
+  padding: 20rpx 40rpx;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+.box::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 70rpx;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1rpx solid #e8e8e8;
+}
+
+.box::before {
+  position: absolute;
+  content: " ";
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1rpx solid #2F91FF;
+}
+
+.noAddressBox {
+  margin: 100rpx 0;
+}
+
+.noAddressBox image {
+  width: 340rpx;
+  height: 330rpx;
+}
+
+.custBtn {
+  border-radius: 10rpx;
+  width: 40%;
+  outline: none;
+  font-size: 28rpx;
+  font-weight: 600;
+  background-color: #2F91FF;  
+  margin-top: 40rpx;
+  color: #fff;
+}
+
+.noAddressBox text {
+  font-size: 28rpx;
+  margin: -40rpx auto 50rpx auto;
+  color: #999;
+}
+
+.addAddress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.defalut{
+  padding: 20rpx 0;
+}
+
+.sexCls {
+  margin: 0 30rpx;
+}
+
+.phone {
+  margin: -10rpx 0 10rpx 0;
+}
+
+.operation {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-top: 40rpx;
+}
+
+.operation view{
+  margin-left: 40rpx;
+}
+
+.operation view text{
+  padding-left: 15rpx;
+}

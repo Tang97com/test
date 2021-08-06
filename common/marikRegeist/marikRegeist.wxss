@@ -1,0 +1,56 @@
+page{
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 28rpx;
+}
+.tenants {
+  margin-bottom: 80rpx;
+}
+.item {
+  border-bottom: 1rpx #e1e1e1 solid;
+  padding: 20rpx 40rpx;
+}
+
+.item input {
+  text-align: end;
+}
+
+.btn-grounp{
+  width: 100%;
+  margin: 80rpx 0;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 32rpx;
+  color: #fff;
+  position: fixed;
+  padding: 20rpx 0 !important;
+  bottom: 0;
+  left: 0;
+  width: 100% !important;
+  background-color:  #2F91FF;
+  border-radius: 0;
+}
+.imgBox {
+  border: 1rpx dashed #e1e1e1;
+  width: 90%;   
+  margin: 0 auto;
+  text-align: center;
+  padding: 40rpx 0;
+}
+.idcardImg {
+  width: 500rpx;
+  height: 260rpx;
+}
+.uploadBox {
+  text-align: justify;
+  margin: 40rpx 0 0 0;
+}
+.uploadBox_title {
+  display: block;
+  padding-left: 40rpx;
+  margin-bottom: 10rpx;
+}
+
+

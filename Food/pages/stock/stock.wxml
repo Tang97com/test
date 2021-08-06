@@ -1,0 +1,22 @@
+
+<view class="CommodityStocks">
+  <view class="content">
+    <!-- 商品名字 -->
+    <view class="CommodityName">
+      <text>商品名字</text>
+      <text>库存状态</text>
+    </view>
+    <!-- 商品详情/开关 -->
+    <view class="DetailAndswitch">
+      <view wx:for="{{3}}" wx:key="index" class="scroll_view">
+        <text>绝味鸭脖</text>
+        <van-image width="100rpx" height="100rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+        <button checked="true">{{ checked?"true":"false" }}</button>
+      </view>
+    </view>
+    <!-- 保存按钮 -->
+    <view class="SaveButton">
+      <button><text>保存</text></button>
+    </view>
+  </view>
+</view>

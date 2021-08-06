@@ -1,0 +1,64 @@
+@import '/miniprogram_npm/@vant/weapp/common/index.wxss';
+@import '/common/PersonCenter/PersonCenter.wxss';
+page {
+  font-size: 32rpx;
+}
+.content {
+  margin-bottom: 50px;
+}
+.topBackground {
+  background-color: #66a6ff;
+  height: 300rpx;
+  width: 100%;
+}
+.box {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 500rpx;
+  width: 94%;
+  margin: -250rpx auto 0 auto;
+  padding: 20rpx 40rpx;
+  box-sizing: border-box;
+}
+.box .ahhPosition{
+  padding-right: 10rpx;
+}
+.box_time view {
+  display: flex;
+  flex-direction: column;
+}
+.box_time view:last-child {
+  flex-direction: row;
+  align-items: center;
+}
+.box_serch {
+  display: flex;
+  align-items: center;
+  padding: 40rpx 0;
+}
+.search_title {
+  color: #666;
+  padding-left: 80rpx;
+}
+.city {
+  padding: 20rpx 0;
+}
+.box_time {
+  padding: 20rpx 0;
+}
+.fjtj {
+  width: 94%;
+  color: #666;
+  margin: 20rpx auto;
+}
+.rz_title {
+  font-size: 28rpx;
+  color: 333;
+}
+.iconxiangyou {
+  padding: 6rpx 0 0 10rpx;
+}
+.load_text {
+  text-align: center;
+  padding-bottom: 40rpx;
+}

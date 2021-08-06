@@ -1,0 +1,58 @@
+page{
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 28rpx;
+}
+.tenants {
+  margin-bottom: 80rpx;
+}
+.item {
+  border-bottom: 1rpx #e1e1e1 solid;
+  padding: 20rpx 40rpx;
+}
+
+.item input {
+  text-align: end;
+}
+
+.btn-grounp{
+  width: 100%;
+  margin: 80rpx 0;
+}
+
+.btn-ct,
+.btn-qd {
+  font-weight: 600;
+  font-size: 40rpx;
+  color: #fff;
+  width: 200rpx !important;
+}
+
+.btn-qd{
+  background: linear-gradient(0deg, #3CDFFF, #2F91FF);
+  margin-right: 40rpx;
+}
+.btn-ct {
+  background-color: #fc624d;
+}
+
+.raco {
+  border: 1rpx dashed #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 40rpx auto;
+}
+
+.raco image {
+  height: 360rpx;
+  padding: 20rpx 0;
+}
+
+.uploadText {
+  text-align: center;
+  margin-top: 40rpx;
+}
+
+

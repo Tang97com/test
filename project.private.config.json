@@ -1,0 +1,354 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "干洗小程序-",
+          "pathName": "dryClean/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "干洗我的",
+          "pathName": "dryClean/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "配送员注册",
+          "pathName": "common/marikRegeist/marikRegeist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "Print/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "购物车",
+          "pathName": "dryClean/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "干洗商家",
+          "pathName": "dryClean/store/store",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "支付界面",
+          "pathName": "dryClean/pay/pay",
+          "query": "count=20.0&num=5&shopid=1",
+          "scene": null
+        },
+        {
+          "name": "添加地址",
+          "pathName": "common/addAreaAddress/addAreaAddress",
+          "query": "id=4&tap=编辑",
+          "scene": null
+        },
+        {
+          "name": "我的收益",
+          "pathName": "common/myIncome/myIncome",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "配送员",
+          "pathName": "dryClean/marik/marik",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "配送员我的",
+          "pathName": "dryClean/marikPage/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "配送员订单窗口",
+          "pathName": "dryClean/marikPage/order/order",
+          "query": "type=2&state=待送件",
+          "scene": null
+        },
+        {
+          "name": "投诉建议",
+          "pathName": "common/advice/advice",
+          "query": "type=2&state=待送件",
+          "scene": null
+        },
+        {
+          "name": "洗衣进度",
+          "pathName": "dryClean/userPage/progress/progress",
+          "query": "type=2&state=待送件",
+          "scene": null
+        },
+        {
+          "name": "我的收货地址",
+          "pathName": "common/address/address",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商家",
+          "pathName": "dryClean/store/store",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "dryClean/marikPage/orderDetail/orderDetail",
+          "pathName": "dryClean/marikPage/orderDetail/orderDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "用户订单",
+          "pathName": "dryClean/userPage/userorder/userorder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商家注册",
+          "pathName": "dryClean/storePage/storeRegister/storeRegister",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "打印",
+          "pathName": "Print/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "打印--用户--我的",
+          "pathName": "Print/userPage/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "打印--商家--我的",
+          "pathName": "Print/storePage/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "图片上传测试",
+          "pathName": "view/imgUpload/imgUpload",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "打印--批量打印",
+          "pathName": "Print/printPage/plCopy/plCopy",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "打印--图片批量打印",
+          "pathName": "Print/printPage/imgPlprint/imgPlprint",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "打印--支付",
+          "pathName": "Print/pay/pay",
+          "query": "file=[{\"path\":\"http://tmp/m3bsVRVbuBD090380c9933cde268b4abeb1047d35a9a.zip\",\"name\":\"干洗衣物图片.zip\",\"num\":7,\"price\":1},{\"path\":\"http://tmp/3PJGXD1NSMGj90380c9933cde268b4abeb1047d35a9a.zip\",\"name\":\"干洗衣物图片.zip\",\"num\":3,\"price\":1},{\"path\":\"http://tmp/9uWdDqLzF0MNe425140a9962e7625b1d2cf63a374f48.jpg\",\"name\":\"图片.jpg\",\"num\":2,\"price\":1}]&filelink=wwwqwewqe&label=批量",
+          "scene": null
+        },
+        {
+          "name": "登陆测试",
+          "pathName": "view/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "配送大厅",
+          "pathName": "dryClean/marik/marik",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "common/address/address",
+          "pathName": "common/address/address",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "图片打印",
+          "pathName": "Print/printPage/imgPrint/imgPrint",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "打印--支付",
+          "pathName": "Print/pay/pay",
+          "query": "num=5&file=wewew.jpg",
+          "scene": null
+        },
+        {
+          "name": "酒店",
+          "pathName": "hotel/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "酒店--详情",
+          "pathName": "hotel/detail/detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "酒店--支付",
+          "pathName": "hotel/pay/pay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "酒店--查找",
+          "pathName": "hotel/findhotel/findhotel",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "酒店搜索",
+          "pathName": "hotel/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "test/test",
+          "pathName": "test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "酒店--订单",
+          "pathName": "hotel/order/order",
+          "query": "type=1",
+          "scene": null
+        },
+        {
+          "name": "酒店新订单",
+          "pathName": "hotel/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "酒店订单详情",
+          "pathName": "hotel/orderDetail/orderDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "酒店入驻",
+          "pathName": "hotel/Merchant/hotelRegister/hotelRegister",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "美食",
+          "pathName": "Food/pages/index/index",
+          "query": "type=2",
+          "scene": null
+        },
+        {
+          "name": "Food/pages/ordering/ordering",
+          "pathName": "Food/pages/ordering/ordering",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "美食搜索",
+          "pathName": "Food/pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品管理",
+          "pathName": "Food/pages/Merchandising/Merchandising",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "用户订单",
+          "pathName": "Food/pages/Order/Order",
+          "query": "typesof=user",
+          "scene": null
+        },
+        {
+          "name": "商家订单",
+          "pathName": "Food/pages/Order/Order",
+          "query": "typesof=store",
+          "scene": null
+        },
+        {
+          "name": "商品库存",
+          "pathName": "Food/pages/stock/stock",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Food/pages/index/index",
+          "pathName": "Food/pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "美食店铺管理",
+          "pathName": "Food/pages/administer/administer",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "美食搜索结果",
+          "pathName": "Food/pages/searchDetail/searchDetail",
+          "query": "name=%E7%83%A7%E7%83%A4",
+          "scene": null
+        },
+        {
+          "name": "金额结算",
+          "pathName": "Food/pages/Settlement/Settlement",
+          "query": "Amount=50",
+          "scene": null
+        },
+        {
+          "name": "备注",
+          "pathName": "Food/pages/Settlement/Note/Note",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Food/pages/index/index",
+          "pathName": "Food/pages/index/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

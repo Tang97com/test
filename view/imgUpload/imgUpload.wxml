@@ -1,0 +1,5 @@
+<view class="uploadText">上传营业执照</view>
+    <view class="raco" bindtap="uploadImg">
+      <image src="{{imgurl}}" mode="aspectFill">
+      </image>
+    </view>

@@ -1,0 +1,40 @@
+<form catchsubmit="formSubmit" catchreset="formReset">
+  <view class="item flex-between">
+    <text>姓名：</text>
+    <input type="text" name="name" maxlength="15" placeholder="请输入姓名" />
+  </view>
+
+  <view class="item flex-between">
+    <text>性别：</text>
+    <radio-group name="sex">
+      <label style="margin-right: 20rpx"><radio value="1" checked="true"/>男</label>
+      <label><radio value="2"/>女</label>
+    </radio-group>
+  </view>
+
+  <view class="item flex-between">
+    <text>学号</text>
+    <input type="text" name="studentcard" placeholder="请输入学号" />
+  </view>
+
+  <view class="item flex-between">
+    <text>身份证号：</text>
+    <input type="text" name="idcard" maxlength="18" placeholder="请输入身份证号码" />
+  </view>
+
+  <view class="item flex-between">
+    <text>电话：</text>
+    <input type="number" name="tel" maxlength="11" placeholder="电话号码" />
+  </view>
+
+  <view class="uploadBox" wx:for="{{imgList}}" wx:key="index">
+    <text class="uploadBox_title">{{item.name}}</text>
+    <view bindtap="idcardUpload" id="{{item.id}}" class="imgBox">
+      <image class="idcardImg" src="{{item.url}}" mode="aspectFit"></image>
+      <view>点击上传</view>
+    </view>
+  </view>
+  <view class="btn-grounp flex-around">
+    <button class="btn" formType="submit">提交</button>
+  </view>
+</form>

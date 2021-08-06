@@ -1,0 +1,26 @@
+<view>
+  <block>
+    <!-- <view class="screenBox flex-around">
+      <view bindtap="showOneList" class="screenView flex-between">
+        <text wx:if="{{oneText}}">{{oneText}}</text>
+        <text wx:else>全部楼栋</text>
+        <i class="ahh iconxiala"></i>
+      </view>
+    </view> -->
+
+    <view class="container">
+      <card list="{{list}}" state="待接单" bind:jumpDetail="goToDeTetail"></card>
+      <view class="bottomTitle vivify popIn" wx:if="{{wbFlag}}">我也是有底线的~</view>
+    </view>
+
+    <view class="bottom flex-around">
+      <view class="hall" bindtap="senderHall">配送大厅</view>
+      <view class="markMine" bindtap="gotoMarkiMine">我的</view>
+    </view>
+  </block>
+</view>
+
+<view wx:if="{{oneFlag}}" class="clearflex">
+  <view class="Mask" bindtap="ChangeOneFlag"></view>
+  <selector list="{{oneList}}" bind:determine="Onedetermine" bind:cancal="ChangeOneFlag"></selector>
+</view>

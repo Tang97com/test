@@ -1,0 +1,16 @@
+<import src="/common/drycleanOrderDetail/drycleanOrderDetail.wxml" />
+
+<view>
+  <template is="drycleanOrderDetail" data="{{list, mask, cancel, recev, waitOrder}}"></template>
+</view>
+
+<view wx:if="{{mask}}" class="Mask" bindtap="celcode"></view>
+<view class="pop" wx:if="{{pop}}">
+   <view class="pop_input">
+    <input class="inpts" type="text" bindinput="getvalue" placeholder="请输入安全码" maxlength="8" />
+   </view>
+   <view class="btnGrounp flex-around">
+    <view bindtap="celcode">取消</view>
+    <view bindtap="qrcode">确认</view>
+   </view>
+</view>

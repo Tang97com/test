@@ -1,0 +1,106 @@
+<block>
+  <view class="bgImgBox">
+    <image src="../../static/img/bg.png" alt="" />
+  </view>
+  <view class="card one" wx:for="{{roomDetail}}" wx:key="index">
+    <view class="ft_title">{{startdate}} --{{day}}晚--{{enddate}} </view>
+    <view class="ft_title">{{item.name}}</view>
+    <view class="ft_stitle">{{item.bed}} {{item.breakfast}}早餐 {{item.area}}m² {{item.window}}窗 {{item.smoke}}</view>
+    <van-divider />
+    <view class="ft_stitle">
+      <i class="fontBig ahh iconqueren"></i>
+      <text>{{startdate}}18:00前可免费取消</text>
+    </view>
+  </view>
+  <view class="card two">
+    <view id="title">
+      <view><i class="ahh icongantanhao"></i></view>
+      <view class="two_title">订房必读</view>
+      <view class="ckqb" bindtap="onClose">查看全部<i class="ahh iconxiangyou"></i></view>
+    </view>
+
+    <view><i class="yuan"></i><text>订单需等酒店或供应商确认后才生效，订单确认结果以下单校园通知为准; 请在订单生效后再至酒店前台办理入住</text></view>
+    <view><i class="yuan"></i><text>入住时间06:00以后 离店时间14:00以前</text></view>
+    <view><i class="yuan"></i><text>不允许携带宠物</text></view>
+  </view>
+  <view class="card">
+    <view class="liufan">
+      <i class="ahh iconwanshang"></i>
+      <text>整晚留房 预定成功后,酒店将为您整晚留房!</text>
+    </view>
+    <van-divider hairline />
+    <view>
+      <van-field readonly label="房间数量" model:value="{{ room }}" placeholder="1间(每间最多住2人)" border="{{ false }}"
+        right-icon="arrow-down"></van-field>
+      <van-field label="住客姓名" clearable model:value="{{ name }}" placeholder="每间填1位住客姓名" border="{{ false }}"
+        right-icon="https://b.yzcdn.cn/vant/icon-demo-1126.png"></van-field>
+      <van-field maxlength="11" type="number" label="联系手机" model:value="{{ phone }}" placeholder="请填写正确的手机号" border="{{ false }}"
+        right-icon="phone-o" clearable></van-field>
+      <van-field bindtap="changRoom" type="number" readonly label="预计到店" model:value="{{ time }}" placeholder="暂无"
+        border="{{ false }}" right-icon="arrow"></van-field>
+    </view>
+  </view>
+  <view class="card delpd">
+    <view class="fymx_title">费用明细</view>
+    <van-divider />
+    <view class="fymx_title flex-between zxzf">
+      <h4>在线支付</h4>
+      <text>1间{{day}}晚 共<text class="price">￥{{rooMoney * day}}</text></text>
+    </view>
+    <van-divider />
+    <van-cell title="房费" value="￥{{rooMoney * day}}" />
+    <van-cell value="{{day}} x ￥{{rooMoney}}" />
+    <van-cell value="" />
+  </view>
+  <view class="card">
+    <view class="zyts">重要提示</view>
+    <van-divider />
+    <view class="tkgz">退款规则</view>
+    <view class="tkgz_content">根据酒店政策，在18:00之后退款将扣除全部房费</view>
+    <van-divider />
+    <view class="tkgz">预定说明</view>
+    <view class="tkgz_content">根据酒店政策，请在14:00之后入住</view>
+  </view>
+
+  <view class="bottom"></view>
+  <van-submit-bar price="{{ rooMoney * 100 * day }}" button-text="提交订单" bind:submit="onSubmit">
+  </van-submit-bar>
+</block>
+
+<!-- 弹窗组件 -->
+<block>
+  <van-popup closeable show="{{ flag }}" position="bottom" custom-style="height: 50%;" bind:close="onClose">
+    <view class="popup_title">订房必读</view>
+    <van-divider />
+    <view class="popup_view">
+      <view class="popup_ts">
+        <h4>预定提示</h4>
+        <view class="popup_content">订单需等酒店或供应商确认后才生效，订单确认结果以下单校园通知为准</view>
+      </view>
+      <view class="popup_ts">
+          <h4>入离时间</h4>
+          <view class="popup_content">入住时间06:00以后 离店时间14:00以前</view>
+      </view>
+      <view class="popup_ts">
+        <h4>宠物携带</h4>
+        <view class="popup_content">不允许携带宠物</view>
+      </view>
+    </view>
+  </van-popup>
+</block>
+
+<block>
+  <van-popup show="{{ roomtime }}" position="bottom"  bind:close="changRoom">
+    <view class="room_content">
+       <view>预计到店</view>
+       <view class="room_text">房间整晚保留，14:30前到店可能需要等房</view>
+       <view class="pop_tag">
+          <view class="tag_time" wx:key="index" bindtap="getCheckIndate" wx:for="{{CheckIndate}}" data-date="{{item}}">{{item}}:00</view>
+       </view>
+    </view>
+  </van-popup>
+</block>
+
+<block>
+  <van-toast id="van-toast" />
+</block>

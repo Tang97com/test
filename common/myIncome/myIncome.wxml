@@ -1,0 +1,34 @@
+<view class="money clearflex">
+  <!-- 自定义顶部  -->
+  <view class="custNav clearflex">
+    <view class="box">
+      <view class="box-item">
+        <i class="ahh iconzhanghushouru"></i>
+        <text>余额</text>
+      </view>
+      <view class="box-item moneyTitle" >￥ {{num}}</view>
+      <view class="box-item" bindtap="TakeMoney">
+        <i class="ahh icontixian"></i>
+        <text>提现</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="mainBox clearflex">
+    <view class="swiper-tab">
+      <view class="{{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">收益</view>
+      <view class="{{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">提现</view>
+      <view class="{{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab" wx:if="{{typesOf !== 'jd'}}">处罚</view>
+      <view class="{{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">全部</view>
+    </view>
+    <view class="content-Box">
+      <scroll-view class="content scroll-box" scroll-y="true">
+        <view wx:for="{{allData}}" wx:key="unqui" class="scrool-item">
+          <i class="ahh icon50"></i>
+          <text>{{item.remarks}}{{item.money}}元</text>
+          <text class="timers">{{item.created_at}}</text>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

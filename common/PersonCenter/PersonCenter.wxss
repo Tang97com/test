@@ -1,0 +1,98 @@
+.noin {
+  margin-top: 200rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.joinme{
+  background: linear-gradient(0deg, #3CDFFF, #2F91FF);
+  border-radius: 40rpx;
+  color: #fff;
+}
+.image{
+  width: 440rpx;
+  height: 300rpx;
+  margin-bottom: 100rpx;
+}
+.navTop {
+  height: 400rpx;
+  /* background: linear-gradient(0deg, #3CDFFF, #2F91FF); */
+  background-color: #66a6ff;
+  position: relative; 
+}
+.avatar {
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  width: 128rpx;
+  height: 128rpx;
+}
+.userinfo-avatar {
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  width: 128rpx;
+  height: 128rpx;
+}
+.authorization {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-nickname {
+  color: #fff;
+  padding-top: 10rpx;
+}
+.container{
+  width: 94%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -80rpx;
+}
+.card {
+  border-radius: 10rpx;
+  padding: 30rpx 50rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.card-item {
+  position: relative;
+}
+.card-name {
+  font-size: 28rpx;
+  color: #6a6a6a;
+  padding-top: 10rpx;
+}
+.card-item  .ahh {
+   font-size: 54rpx;
+}
+.mt2 {
+  margin-top: 20rpx;
+}
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+.postCenter {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-20%);
+}

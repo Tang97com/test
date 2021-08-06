@@ -1,0 +1,13 @@
+
+<view class="NotePage">
+  <text>备注:</text>
+  <view>
+    <textarea placeholder="{{Note}}" bindinput="getValue" maxlength="30">
+      
+    </textarea>
+  </view>
+
+  <view class="SaveTOsubmit">
+    <van-button type="primary" round block style="width: 100%;margin-top:80rpx;" >完成</van-button>
+  </view>
+</view>

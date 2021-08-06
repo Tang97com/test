@@ -1,0 +1,24 @@
+<view class="cpts">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+
+    <view class="server">
+      <text class="marik">配送员服务</text>
+      <star bind:select="getStart"></star>
+    </view>
+ 
+    <view class="server">
+      <text class="marik">下单校园使用评价</text>
+      <star bind:select="getStartTwo"></star>
+    </view>
+
+    <view class="view_ipt">
+       <input class="name" maxlength="10" name="name" placeholder="请输入名字" />
+       <input class="contact" maxlength="20" name="contact" placeholder="请输入联系方式" />
+       <textarea class="content" name="content"  cols="30" rows="10" placeholder="请输入建议内容"></textarea>
+    </view>
+
+    <view class="btn-area">
+      <button class="btns" formType="submit">提交</button>
+    </view>
+  </form>
+</view>

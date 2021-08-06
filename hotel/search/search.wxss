@@ -1,0 +1,11 @@
+.container {
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+.searchlist {
+  margin-top: 30rpx;
+}
+.tag {
+  display: inline-block;
+  margin: 0 20rpx 20rpx 0;
+}

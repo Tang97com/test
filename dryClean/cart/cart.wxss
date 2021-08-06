@@ -1,0 +1,209 @@
+
+.empty {
+  margin: 50rpx auto;
+}
+.mt25 {
+  margin-bottom: 50rpx;
+  width: 100%;
+}
+.img {
+  width: 400rpx;
+  height: 400rpx;
+}
+.title {
+  font-size: 26rpx;
+  margin-top: -60rpx;
+  text-align: center;
+  color: #7a7a7a;
+  padding: 20rpx 40rpx;
+}
+.custBtn {
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #33aaff;
+  border-radius: 5rpx;
+  border: 1rpx solid #33aaff;
+  width: 150rpx;
+  height: 50rpx;
+  margin: 0 auto;
+  line-height: 50rpx;
+  text-align: center;
+}
+/* 购物车 */
+.cart-box {
+  overflow: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  margin-bottom: 100rpx;
+}
+
+.cart-box .item {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  background: white;
+  border-bottom: 1px solid gainsboro;
+}
+.select-img-box{
+  display: flex;
+  align-items: center;
+}
+
+.cart-box .item .goods-info {
+  margin-left: 20rpx;
+}
+
+.cart-box .goods-img {
+  width: 160rpx;
+  margin-left: 20rpx;
+}
+
+.cart-box .shop-name {
+  margin-top: -20rpx;
+  margin-left: 20rpx;
+  font-weight: 900;
+  font-family: PingFangSC-Semibold;
+  font-size: 13px;
+  color: #333;
+  letter-spacing: 0;
+}
+/* .cart-box .line{
+ height: 1rpx;
+ width:50%;
+  border: none;
+  border-bottom: 1px solid #c5c5c5;
+  transform: scaleY(0.5);
+  transform-origin: 0 0;
+} */
+.cart-box .row {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 430rpx;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+goods-btn btn-minus
+.cart-box {
+  color: #999;
+  font-size: 10rpx;
+  width: calc(100% - 100rpx);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cart-box .goods-name {
+  color: #333;
+  font-size: 13px;
+}
+
+.cart-box .goods-price {
+  color: rgb(225,54,34);
+  font-size: 32rpx;
+}
+
+.cart-box .goods-type {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 20rpx;
+}
+
+.cart-box .num-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-box .goods-btn {
+  width: 10rpx;
+  height: 60rpx;
+  padding: 0;
+  line-height: 50rpx;
+  font-weight: bold;
+  color: gray;
+  margin: 0;
+  background: #333;
+}
+
+.cart-box .num {
+  color:  #333333;
+  width: 60rpx;
+  text-align: center;
+  font-size: 35rpx;
+}
+
+.cart-box .btn-add {
+  font-size: 28rpx;
+}
+
+.cart-box .btn-minus {
+  font-size: 28rpx;
+}
+
+.cart-box .btn-groups {
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.cart-fixbar {
+  position: fixed;
+  bottom: 0;
+  background: whitesmoke;
+  height: 99rpx;
+  width: 100%;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cart-fixbar .allSelect {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  align-items: center;
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.cart-fixbar .allSelect-text {
+  color: grey;
+  margin-left: 20rpx;
+  font-size: 32rpx;
+}
+
+.cart-fixbar .count {
+  margin-left: 50rpx;
+  color: grey;
+  background: whitesmoke;
+  font-size: 32rpx;
+}
+
+.cart-fixbar .order {
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 98rpx;
+  background-image: linear-gradient(-90deg, #de3021 0%, #ec5c31 100%);
+  line-height: 100rpx;
+  position: absolute;
+  right: 0;
+  padding: 0 40rpx;
+  font-size: 32rpx;
+}
+
+.cart-fixbar .allnum {
+  font-size: 24rpx;
+}
+
+.iconjian,
+.iconjia {
+  color: rgb(225,54,34);
+}

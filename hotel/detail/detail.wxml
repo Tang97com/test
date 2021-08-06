@@ -1,0 +1,166 @@
+<block wx:for="{{hotelDatail}}" wx:key="index">
+  <view class="backimg">
+    <image src="{{item.url1}}" alt="" />
+    <!-- <view class="yuan_view"></view> -->
+  </view>
+  <view class="card">
+    <h3 class="title">{{item.name}}</h3>
+    <view class="hotel_tag">
+      <text>经济型</text>
+      <text>近地铁</text>
+      <text>停车场</text>
+    </view>
+    <view class="hotel_tag">
+      <text>停车费</text><text>行李存放</text><text>有收费停车场</text>
+    </view>
+    <view class="adress">
+      {{item.address}}
+    </view>
+    <view class="icon_one">
+      <view>
+        <i class="ahh iconlocation"></i>
+        <text>距离你当前位置大约{{item.distance}}KM</text>
+      </view>
+      <view class="ahh_button" bindtap="getToMap">
+        <text>立即前往</text>
+      </view>
+    </view>
+  </view>
+  <view class="fwlist">
+    <view class="rztime">
+      <view>
+        <text>{{date[0]}} </text>--{{day}}晚--<text>{{date[1]}} </text>
+      </view>
+    </view>
+    <view class="screening">
+      <view class="scroll-view">
+        <scroll-view scroll-x="true">
+          <van-tag class="van_tag" wx:for="{{3}}" wx:key="index" size="large" color="#eee" text-color="#333">大床房
+          </van-tag>
+        </scroll-view>
+      </view>
+
+    </view>
+    <view class="fxlist" wx:for="{{hotelRoom}}" wx:key="index">
+      <view bindtap="onClose" class="fxlist_item" id="{{item.id}}">
+        <view>
+          <van-image fit="cover" radius="10rpx" width="200rpx" height="200rpx"
+            src="https://sa.scyxk.top/uploads/{{item.url1[0]}}" />
+        </view>
+        <view class="content flex-colum">
+          <h4 class="text-hidden">{{item.name}}</h4>
+          <text class="content_text">{{item.breakfast}}早餐 {{item.area}}m² {{item.bed}}</text>
+          <text class="content_text">入住当天18:00可免费取消</text>
+          <view>
+            <text>￥</text>
+            <text class="money">{{item.money}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <van-divider />
+  <!-- <view></view> -->
+  <view class="df_view flex-colum">
+    <h4><i class="ahh icongantanhao"></i>定房必读</h4>
+    <view>
+      <text class="yuan"></text>
+      <text>酒店仅接待大陆客户</text>
+    </view>
+    <view>
+      <text class="yuan"></text>
+      <text>每天08:00-23:30</text>
+    </view>
+  </view>
+</block>
+
+
+<block wx:for="{{roomDetail}}" wx:key="index">
+  <van-action-sheet bind:close="onClose" show="{{ show }}">
+    <swiper autoplay="{{true}}" indicator-dots indicator-color="ivory" indicator-active-color="#d43c33">
+      <swiper-item wx:for="{{item.url1}}" wx:for-item="ban" wx:key="banner">
+        <image src="https://sa.scyxk.top/uploads/{{ban}}"></image>
+      </swiper-item>
+    </swiper>
+    <view class="sheet_content">
+      <h4 class="sheet_title">{{item.name}}</h4>
+      <view class="sheet_icon">
+        <view class="sheet_item">
+          <i class="ahh iconchuang"></i>
+          <text>{{item.bed}}</text>
+        </view>
+        <view class="sheet_item">  
+          <i class="ahh iconpingfang"></i>
+          <text>{{item.area}}m²</text>
+        </view>
+        <view class="sheet_item">
+          <i class="ahh iconweibiaoti--"></i>
+          <text>{{item.breakfast}}窗</text>
+        </view>
+        <view class="sheet_item">
+          <i class="ahh iconWIFIwofi"></i>
+          <text>WIFI</text>
+        </view>
+        <view class="sheet_item">
+          <i class="ahh iconlouceng"></i>
+          <text>{{item.floor}}层</text>
+        </view>
+        <view class="sheet_item">
+          <i class="ahh iconicon_breakfast"></i>
+          <text>无早餐</text>
+        </view>
+        <view class="sheet_item">
+          <i class="ahh iconpeitaosheshiicon-"></i>
+          <text>{{item.smoke}}</text>
+        </view>
+        <view class="sheet_item">
+          <i class="ahh iconduoren"></i>
+          <text>{{item.people_num}}人</text>
+        </view>
+      </view>
+      <view class="fyzz">
+        <h4 class="fyzz_title">费用政策</h4>
+        <view class="flex-colum ">
+          <text>加床: 该房型不可加床</text>
+          <text>停车场: 有收费的停车场</text>
+        </view>
+      </view>
+      
+      <view class="fxsm">
+        <h4 class="fxsm_title">房型说明</h4>
+        <view class="fxsm_content"><i class="yuan"></i>图片仅供参考</view>
+      </view>
+    </view>
+    <!-- <view class="fgx"></view> -->
+    <view class="box">
+      <view class="prompt">
+        <view class="impPrompt">
+          重要提示
+        </view>
+        <view>
+          <span>退款规则</span>
+          <p>根据酒店政策，{{date}}18点前可免费取消，逾期不可取消/变更，如未入住，酒店将扣除全部房费</p>
+        </view>
+        <view>
+          <span>预订说明</span>
+          <p>订单需等酒店或供应商确认后才生效，订单确认结果以下单校园通知为准;请在订单生效后再至酒店前台办理入住。</p>
+        </view>
+      </view>
+    </view>
+    <view class="fgx"></view>
+    <view class="fymx">
+      <h4 class="fymx_title">费用明细</h4>
+      <view class="flex-between fymx_content">
+        <text>共计</text>
+        <text>每间每晚￥<text class="money">{{item.money}}</text></text>
+      </view>
+    </view>
+    <view class="bottom"></view>
+    <van-submit-bar price="{{item.money * day * 100}}" button-text="预定" bind:submit="onSubmit" id="{{item.money * 100}}">
+      <view class="flexCenterColum kfbtn">
+        <i class="ahh iconkefu1"></i>
+        <text bindtap="Call">问酒店</text>
+      </view>
+    </van-submit-bar>
+  </van-action-sheet>
+</block>

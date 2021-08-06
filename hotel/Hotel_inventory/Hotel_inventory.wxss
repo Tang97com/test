@@ -1,0 +1,60 @@
+@import "/iconfont/iconfont.wxss";
+@import "/animation/vivify.min.wxss";
+.card{
+  width: 95%;
+  margin: 0 auto 40rpx auto;
+  /* height: 400rpx; */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  padding: 30rpx 30rpx 0 30rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+}
+
+.ordertitle{
+  width: 100%;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #DDD2C7;
+}
+.ordertitle text:last-child {
+  color: #568DC3;
+}
+
+.ordercontent{
+  /* height: 240rpx; */
+  margin-left: 40rpx;
+  border-bottom: 1rpx solid #DDD2C7;
+}
+.info {
+  padding: 10rpx 0 0 0;
+}
+.info text{
+  margin-left: 40rpx;
+}
+.info text:first-child{
+  margin-left: 0;
+}
+
+.recipient {
+  padding-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .recipient .button {
+  padding: 0;
+} */
+
+.recipient .button button {
+  padding: 0;
+  float: left;
+  margin: 0 20rpx 20rpx 20rpx;
+  width: 70rpx;
+  height: 60rpx;
+  /* border-radius: 20rpx; */
+  font-size: 24rpx;
+  line-height: 60rpx;
+  text-align:center;
+}

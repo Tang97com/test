@@ -1,0 +1,15 @@
+<block wx:for="{{list}}" wx:key="index">
+  <view class="card vivify popInBottom">
+  <view><image src="https://sa.scyxk.top/uploads/{{item.url1[1]}}"></image></view>
+  <view class="ordercontent flex-column-around">
+    <view class="recipient">
+      <view class="info">
+        <text>房型：{{item.name}}</text>
+      </view>
+      <view class="button">
+        <button bindtap="No" id="{{item.id}}">关闭</button>
+      </view>
+    </view>
+  </view>
+</view>
+</block>

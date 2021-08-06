@@ -1,0 +1,29 @@
+.printPage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 120rpx;
+  line-height: 120rpx;
+  background-color: #2F91FF;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.container {
+  margin: 40rpx auto 140rpx auto;
+  width: 95%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.IDcardfm,
+.IDcardzm {
+  padding: 40rpx 0;
+}
+
+.IDcardfm image,
+.IDcardzm image {
+  height: 400rpx;
+  vertical-align: middle;
+}

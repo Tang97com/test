@@ -1,0 +1,281 @@
+
+page{
+  position: relative;
+}
+.box {
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+  width: 95%;
+  margin: 20rpx auto 0 auto;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+.boxInfo{
+  position: relative;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #e8e8e8e8;
+}
+.tswb{
+  position: absolute;
+  top: 10rpx;
+  left: 0;
+  font-size: 50rpx;
+  color: #319FFF;
+}
+.shdz {
+  position: absolute;
+  top: 10rpx;
+  left: 0;
+  font-size: 50rpx;
+  color: #FFCE43;
+}
+.boxInfo-View{
+  padding-left: 70rpx;
+}
+.boxInfo-View text:first-child{
+  margin-left: 0;
+}
+.boxInfo-View text{
+  margin-left: 20rpx;
+}
+
+.boxContent view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20rpx;
+
+}
+.order {
+  margin-bottom: 160rpx;
+}
+
+.order view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20rpx;
+}
+
+.order view:first-child {
+  padding-top: 0;
+}
+.btn{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, #3CDFFF, #2F91FF);
+  border: none;
+  outline: none;
+  width: 100% !important;
+  border-radius: 0;
+  color: #fff;
+  padding: 40rpx 0;
+}
+.bzxx {
+  width: 40%;
+}
+.content {
+  box-sizing: border-box;
+  width: 80%;
+  text-align: end;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+}
+.inputs {
+  /* background-color: #2F91FF; */
+  padding: 20rpx;
+  text-align: start;
+  margin-top: 40rpx;
+  border: 1rpx solid #e1e1e1;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btns view{
+  width: 50%;
+  padding: 40rpx 0;
+  text-align: center;
+}
+
+.maskContent {
+  box-sizing: border-box;
+  padding: 20rpx 40rpx;
+  width: 70%;
+  border-radius: 20rpx;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.gren {
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+  color: #000;
+}
+page{
+  position: relative;
+}
+.box {
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+  width: 95%;
+  margin: 20rpx auto 0 auto;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+
+.boxInfo{
+  position: relative;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #e8e8e8e8;
+}
+.tswb{
+  position: absolute;
+  top: 10rpx;
+  left: 0;
+  font-size: 50rpx;
+  color: #319FFF;
+}
+.shdz {
+  position: absolute;
+  top: 10rpx;
+  left: 0;
+  font-size: 50rpx;
+  color: #FFCE43;
+}
+.boxInfo-View{
+  padding-left: 70rpx;
+}
+.boxInfo-View text:first-child{
+  margin-left: 0;
+}
+.boxInfo-View text{
+  margin-left: 20rpx;
+}
+
+.boxContent view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20rpx;
+
+}
+.order {
+  margin-bottom: 160rpx;
+}
+
+.order view{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20rpx;
+}
+
+.order view:first-child {
+  padding-top: 0;
+}
+
+.btn{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, #3CDFFF, #2F91FF);
+  border: none;
+  outline: none;
+  width: 100% !important;
+  border-radius: 0;
+  color: #fff;
+  padding: 40rpx 0;
+}
+
+.bzxx {
+  width: 40%;
+}
+
+.content {
+  box-sizing: border-box;
+  width: 80%;
+  text-align: end;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+}
+
+.inputs {
+  /* background-color: #2F91FF; */
+  padding: 20rpx;
+  text-align: start;
+  margin-top: 40rpx;
+  border: 1rpx solid #e1e1e1;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btns view{
+  width: 50%;
+  padding: 40rpx 0;
+  text-align: center;
+}
+
+.maskContent {
+  box-sizing: border-box;
+  padding: 20rpx 40rpx;
+  width: 70%;
+  border-radius: 20rpx;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.gren {
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+  color: #000;
+}
+.btn_doub {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2F91FF;
+  color: #fff;
+  line-height: 100rpx;
+  height: 100rpx;
+}
+.btn_doub view{
+   width: 50%;
+   text-align: center;
+}
+
+.btn_doub view:first-child {
+  background-color: #fff079;
+  color: #333;
+}
+.btn_doub view:last-child {
+  background-color: #cc99f9;
+}

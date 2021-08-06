@@ -1,0 +1,27 @@
+<view class="mask">
+</view>
+<!-- <view class="imgBox">
+    <image class="image" mode='aspectFit'  src="{{path}}" />
+</view> -->
+
+
+<view class='imgBox' bindtap="uploadImg">
+  <scroll-view class='images' scroll-y="true" scroll-x="true" style="height:100%;width:100%"
+    bindtouchmove="touchmoveCallback" bindtouchstart="touchstartCallback">
+    <image mode='aspectFit' binderror="errImg" src="{{dataimg}}" style="width:{{scaleWidth }};height:{{scaleHeight}}"
+      bindload="imgload"></image>
+  </scroll-view>
+</view>
+
+
+<view class="content">
+  <view class="num">
+    <i bindtap="remove" class="ahh iconjian"></i>
+    <view class="numbers">
+      <text class="fs">份数</text>
+      <text class="sl">{{num}}</text>
+    </view>
+    <i bindtap="add" class="ahh iconjia"></i>
+  </view>
+  <view class="next" bindtap="printImage">下一步</view>
+</view>

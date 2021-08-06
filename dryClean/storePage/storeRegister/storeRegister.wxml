@@ -1,0 +1,35 @@
+<view class="tenants">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <view class="item flex-between">
+      <text>店铺名称：</text>
+      <input type="text" name="shopName" id="" placeholder="请输入店铺名称" />
+    </view>
+
+    <view class="item flex-between">
+      <text>店铺地址：</text>
+      <input type="text" name="shopeaddress"  placeholder="店铺地址具体到门牌号" />
+    </view>
+
+    <view class="item flex-between">
+      <text>联系人：</text>
+      <input type="text" name="name"  placeholder="联系人" />
+    </view>
+
+    <view class="item flex-between">
+      <text>联系方式：</text>
+      <input type="number" name="tel"  placeholder="联系方式" />
+    </view>
+
+    <view class="uploadText">上传营业执照</view>
+    <view class="raco" bindtap="uploadImg">
+      <image src="{{imgurl}}" mode="aspectFill">
+      </image>
+    </view>
+
+    <view class="btn-grounp flex-around">
+      <button class="btn-qd" formType="submit">提交</button>
+      <button class="btn-ct" formType="reset">重填</button>
+    </view>
+    
+  </form>
+</view>

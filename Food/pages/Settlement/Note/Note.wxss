@@ -1,0 +1,18 @@
+.NotePage {
+  padding: 40rpx;
+  height: 100vh;
+  background-color: #fdfdfd;
+}
+
+.NotePage view {
+  display: flex;
+  justify-content: center;
+}
+
+.NotePage view textarea {
+  margin-top: 30rpx;
+  padding: 15rpx;
+  background-color: #f1f1f1;
+  font-size: 28rpx;
+  border-radius: 20rpx;
+}

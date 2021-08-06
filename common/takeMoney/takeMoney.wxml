@@ -1,0 +1,19 @@
+<view class="takeMoney">
+   <view class="bg">
+      <view class="bg-box">
+         <i class="ahh iconring-s84-stroke2"></i>
+         <view class="bnlance">
+           <text>当前余额</text>
+           <text>{{num}}</text>
+         </view>
+      </view>
+   </view>
+   <view class="formBox">
+     <text>提现金额（提现金额不能小于50）</text>
+     <input class="weui-input"  maxlength="10" bindinput="getMoneyNumber" wx:if="{{idf === 'store'}}" placeholder="￥10" type="number"/>
+     <input class="weui-input"  maxlength="10" bindinput="getMoneyNumber" wx:else placeholder="￥50" type="number"/>
+     <button class="txButtone" bindtap="getMoney">提现</button>
+   </view>
+</view>
+
+<view class="Mask" wx:if="{{Mask}}"></view>

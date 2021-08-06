@@ -1,0 +1,4 @@
+<view class="container">
+  <card list="{{list}}" state="{{state}}" bind:jumpDetail="goToDeTetail"></card>
+  <view class="bottomTitle vivify popIn" wx:if="{{flag}}">我也是有底线的~</view>
+</view>

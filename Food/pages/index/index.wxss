@@ -1,0 +1,172 @@
+
+@import "/common/PersonCenter/PersonCenter.wxss";
+
+.center{
+  background-color: #f2f2f2;
+}
+
+.searchBar {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+}
+
+.school {
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.Search_class {
+  height: 100rpx;
+  width: 530rpx;
+}
+
+.center {
+  height: 100vh;
+}
+
+.NavContent {
+  height: calc(100vh - 350rpx);
+}
+
+/* 附近推荐 */
+
+.NavContent .ContentItem {
+  height: 200rpx;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 8rpx;
+  display: flex;
+  position: relative;
+}
+
+.NavContent .ContentItem h2 {
+  font-weight: bolder;
+}
+
+.NavContent .ContentItem .Writing {
+  padding-left: 30rpx;
+}
+
+.NavContent .ContentItem .imageDetail {
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+}
+
+.NavContent .Detail {
+  width: 360rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavContent .Money {
+  width: 280rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavContent .Rebate {
+  position: absolute;
+  bottom: 20rpx;
+  right: 30rpx;
+  display: flex;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.NavContent .Rebate text {
+  margin-left: 10rpx;
+}
+
+.NavContent .ContentItem text {
+  font-size: 25rpx !important;
+}
+
+/* 热门推荐 / 今日特价 */
+.NavContent .ContentWaterfalls {
+  display: flex;
+  
+  justify-content: space-between;
+}
+
+.NavContent .ContentWaterfalls .WaterfallsItem {
+  background-color: #fff;
+  width: 42%;
+  margin: 30rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+
+.NavContent .ContentWaterfalls .WaterfallsItem .ProductInformation {
+  /* display: flex; */
+  margin-left: 15rpx;
+  width: 80%;
+  /* justify-content: space-between; */
+}
+
+.NavContent .ContentWaterfalls .WaterfallsItem .Detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* padding-left: 20rpx; */
+}
+
+.NavContent .ContentWaterfalls .WaterfallsItem .title {
+  color: #272727;
+  font-weight: bold;
+  padding-left: 20rpx;
+}
+
+.NavContent .ContentWaterfalls .WaterfallsItem .ProductInformation text {
+  font-size: 24rpx;
+  color: #bebebe;
+}
+
+.NavContent .ContentWaterfalls .WaterfallsItem .ProductInformation text:nth-child(1) {
+  border-right: 1rpx solid #bebebe;
+  padding-right: 8rpx;
+} 
+
+.NavContent .ContentWaterfalls .WaterfallsItem .ProductInformation text:nth-child(2) {
+  padding-left: 8rpx;
+} 
+
+.NavContent .ContentWaterfalls .WaterfallsItem .FoodPrice {
+  color: #ff553f;
+  padding: 10rpx 0 10rpx 10rpx;
+}
+
+.NavContent .ContentWaterfalls .WaterfallsItem .SpecialOffer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  background-color: #fa5a18;
+  border-radius: 15rpx;
+  padding-left: 10rpx;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+
+.NavContent .ContentWaterfalls .WaterfallsItem .SpecialOffer text:nth-child(2) {
+  text-decoration: line-through;
+  color: #ff9c81;
+  font-size: 24rpx;
+  line-height: 55rpx;
+}
+
+.NavContent .ContentWaterfalls .WaterfallsItem .SpecialOffer text:nth-child(1) {
+  color: #fff;
+}
+
+.NavContent .ContentWaterfalls .WaterfallsItem .SpecialOffer span {
+  color: #854810;
+  width: 30%;
+  text-align: center;
+  background-color: #fce02c;
+  border-top-left-radius: 50%;
+}
+

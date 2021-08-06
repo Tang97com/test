@@ -1,0 +1,170 @@
+.Settlement {
+  background-color: #f5f5f5;
+  padding: 20rpx;
+  .SettlementContent {
+    .SettlementTop {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      height: 130rpx;
+      line-height: 130rpx;
+      border-radius: 20rpx;
+      box-shadow:3rpx 6rpx 6rpx #c8c8c8;
+      overflow: hidden;
+      padding-right: 18rpx;
+      view {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        line-height: normal;
+        padding: 24rpx;
+        text:nth-child(1) {
+          font-weight: bold;
+          font-size: 30rpx;
+        }
+        text:nth-child(2) {
+          font-size: 28rpx;
+        }
+      }
+    }
+    .SettlementCenter {
+      margin-top: 20rpx;
+      padding: 40rpx 20rpx 20rpx 20rpx;
+      background-color: #fff;
+      border-radius: 20rpx;
+      box-shadow: 3rpx 6rpx 6rpx #c8c8c8;
+      .FoodCenter {
+        .FoodContent {
+          .StoreName {
+            padding-bottom: 15rpx;
+            font-weight: bold;
+          }
+          .FoodsDetail {
+            .Food_details {
+              padding: 10rpx;
+              display: flex;
+              justify-content: space-between;
+              .Food_information {
+                display: flex;
+                .FoodName {
+                  display: flex;
+                  flex-direction: column;
+                  text {
+                    color: #8f8f8f;
+                  }
+                  text:first-child {
+                    font-weight: bolder;
+                    color: #000 !important;
+                  }
+                }
+                .Food_image {
+                  height: 100%;
+                  line-height: 100%;
+                  text-align: center;
+                  padding: 10rpx 18rpx 0 0;
+                }
+              }
+              .FoodAmount {
+                display: flex;
+                flex-direction: column;
+                text-align: end;
+                text:first-child {
+                  font-weight: bold;
+                }
+                text:last-child {
+                  color: #c8c8c8;
+                  text-decoration: line-through;
+                }
+              }
+            }
+          }
+          .otherCost {
+            padding-top: 20rpx;
+            .Cost {
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: 8rpx;
+              text {
+                font-weight: bold;
+              }
+            }
+          }
+          padding-bottom: 18rpx;
+          border-bottom: 1px solid #c8c8c8;
+        }
+        .Amount {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding: 20rpx 15rpx 0rpx 0;
+          view:first-child {
+            text {
+              color: #ff4a33;
+              font-size: 38rpx;
+            }
+            padding-right: 25rpx;
+            padding-top: 11rpx;
+          }
+          view:last-child {
+            text {
+              font-weight: bold;
+              font-size: 50rpx;
+            }
+          }
+        }
+      }
+    }
+    .SettlementBottom {
+      margin-top: 20rpx;
+      padding: 40rpx 20rpx 20rpx 20rpx;
+      background-color: #fff;
+      border-radius: 20rpx;
+      box-shadow: 3rpx 6rpx 6rpx #c8c8c8;
+      .flexBox {
+        display: flex;
+        height: 56rpx;
+        line-height: 50rpx;
+        i {
+          color: #c8c8c8;
+          padding-left: 10rpx;
+        }
+        .flex {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          text {
+            font-size: 28rpx;
+          }
+          text:first-child {
+            font-weight: bold;
+          }
+          .Copies {
+            color: #8e8e8e;
+          }
+        }
+      }
+    }
+  }
+}
+.Submit_orders {
+  position: fixed;
+  bottom: 0;
+  height: 120rpx;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 25rpx;
+  .total {
+    padding-right: 30rpx;
+    text {
+      color: #ff4a33;
+      font-size: 50rpx;
+      font-weight: bold;
+    }
+  }
+  .submit {
+    padding-right: 50rpx;
+  }
+}

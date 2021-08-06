@@ -1,0 +1,114 @@
+<view class="Settlement">
+  <view class="SettlementContent">
+    <!-- 顶部内容/用户信息 -->
+    <view class="SettlementTop">
+      <view>
+        <text>蓝光东方天地7号楼</text>
+        <text>肖老师(女士) 18000552740</text>
+      </view>
+      <i class="ahh iconxiangyou"></i>
+    </view>
+    <!-- 中间内容/餐品小计 -->
+    <view class="SettlementCenter">
+      <view class="FoodCenter">
+        <view class="FoodContent">
+          <view class="StoreName">蜜雪冰城(万象城)</view>
+          <view class="FoodsDetail">
+            <view class="Food_details">
+              <view class="Food_information">
+                <view class="Food_image">
+                  <van-image width="130rpx" height="130rpx" fit="scale-down" src="/Food/img/2.jpg" />
+                </view>
+                <view class="FoodName">
+                  <text>黄桃</text>
+                  <text>正常冰/正常糖</text>
+                  <text>x1</text>
+                </view>
+              </view>
+              <view class="FoodAmount">
+                <text>￥4.99</text>
+                <text>￥7</text>
+              </view>
+            </view>
+            <view class="Food_details">
+              <view class="Food_information">
+                <view class="Food_image">
+                  <van-image width="130rpx" height="130rpx" fit="scale-down" src="/Food/img/2.jpg" />
+                </view>
+                <view class="FoodName">
+                  <text>黄桃</text>
+                  <text>正常冰/正常糖</text>
+                  <text>x1</text>
+                </view>
+              </view>
+              <view class="FoodAmount">
+                <text>￥4.99</text>
+                <text></text>
+              </view>
+            </view>
+          </view>
+          <view class="otherCost">
+            <view class="Cost">
+              <text>包装费</text>
+              <text>￥2</text>
+            </view>
+            <view class="Cost">
+              <text>配送费</text>
+              <text>￥2</text>
+            </view>
+          </view>
+        </view>
+        <view class="Amount">
+          <view>
+            已优惠￥
+            <text>6.01</text>
+          </view>
+          <view>
+            小计￥
+            <text>18.99</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 底部内容 -->
+    <view class="SettlementBottom">
+      <view class="flexBox">
+        <view class="Note flex">
+          <text>备注</text>
+          <text bindtap="GetNote" class="Copies">点击可选择无接触配送</text>
+        </view>
+        <i class="ahh iconxiangyou" bindtap="GetNote"></i>
+      </view>
+      <view class="flexBox">
+        <view class="tablewareNumber flex">
+          <text>餐具份数</text>
+          <text bindtap="getNumber"></text>
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">{{ name?"Copies":"array[index]"}}</view>
+          </picker>
+        </view>
+        <i class="ahh iconxiangyou" bindtap="getNumber"></i>
+      </view>
+      <view class="flexBox">
+        <view class="invoice flex">
+          <text>发票</text>
+          <text class="Copies">暂不支持线上开票，请电话联系商户</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 提交订单 -->
+<view class="Submit_orders">
+  <view class="total">
+    合计:￥
+    <text>18.99</text>
+  </view>
+  <view class="submit">
+    <van-button round type="info">提交订单</van-button>
+  </view>
+</view>
+
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+  <view class="picker">{{array[index]}}</view>
+</picker>

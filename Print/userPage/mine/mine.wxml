@@ -1,0 +1,10 @@
+<import src="/common/PersonCenter/PersonCenter.wxml" />
+
+<view>
+   <template is="PersonCenter" data="{{Icon, iconItem, hasUserInfo, userInfo}}"></template>
+</view>
+
+<view wx:if="{{flag}}">
+  <view class="Mask" bindtap="changeFlag"></view>
+  <pop nodes="{{nodes}}" bind:closer="changeFlag"></pop>
+</view>

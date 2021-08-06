@@ -1,0 +1,75 @@
+<view class="orderContainer">
+  <view class="infoImg">
+    <image src="{{list.url1}}" />
+  </view>
+  <view class="Announcement">
+    <h2>{{list.shopname}}</h2>
+    <text>店家公告：XXXXX醉张扬牛肉火锅冒菜醉张扬牛肉火锅冒菜醉张</text>
+  </view>
+  <!-- 点餐和商家 -->
+  <view class="TabsContent">
+    <van-tabs sticky>
+      <van-tab title="点餐">
+        <view class="view-VTabs">
+          <mp-vtabs
+            vtabs="{{vtabs}}"
+            activeTab="{{activeTab}}"
+            bindtabclick="onTabCLick"
+            bindchange="onChange"
+            class="text"
+            tab-bar-class="vtabs"
+          >
+            <block wx:for="{{vtabs}}" wx:key="title">
+              <mp-vtabs-content tab-index="{{index}}">
+                <view class="vtabs-content-item">
+                  <view class="food" wx:for="{{4}}" wx:for-item="{{food}}" wx:key="index">
+                    <view>
+                      <van-image width="200rpx" height="150rpx" fit="scale-down" src="/Food/img/2.jpg" />
+                    </view>
+                    <view class="Introduction">
+                      <span>{{item.title}}+爆款特惠</span>
+                      <text>商家介绍主要配料主要配料</text>
+                      <view class="iconfont">
+                        <text>￥14.90</text>
+                        <i class="ahh iconjia-copy"></i>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </mp-vtabs-content>
+            </block>
+          </mp-vtabs>
+        </view>
+        <view class="shoppingCart">
+          <view class="Amount">
+            <i class="ahh icongouwuche" style="position: relative; font-size: 60rpx">
+              <mp-badge content="20" style="position: absolute;top: -45rpx;right: -20rpx; font-size: 20rpx;"/>
+            </i>
+            <text>总金额: <text>￥28.00</text></text>
+          </view>
+          <view class="Settlement" bindtap="GetSettlement">
+            <text>去结算</text>
+          </view>
+        </view>
+      </van-tab>
+      <!-- 商家展示页 -->
+      <van-tab title="商家">
+        <view class="Merchant">
+          <view class="address"  >
+            <text>地址：{{list.address}}</text>
+            <i class="ahh icondianhua" style="font-size: 60rpx;"></i>
+          </view>
+          <view class="information">
+            <text class="category">商家信息: <text>{{list.name}}</text></text>
+            <text class="category">营业时间: <text>{{list.hours}}</text></text>
+          </view>
+          <view class="announcement">
+            <text>商家公告:</text>
+            <view class="AnnouncementContent"><text>公告内容公告内容公告内容公告内容公告内容公告内容</text></view>
+          </view>
+          <button class="button">举报商家</button>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<template name="PersonCenter">
+  <view class="navTop">
+    <view class="userinfo postCenter">
+      <block wx:if="{{!hasUserInfo}}">
+        <view class="avatar">
+          <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <button class="authorization"  bindtap="getUserProfile"> 授权登陆 </button>
+      </block>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatar}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickname}}</text>
+      </block>
+    </view>
+  </view>
+  <view class="container">
+    <view class="shadow card flex-between" wx:if="{{iconItem}}">
+      <view bindtap="changeRouter" id="{{item.id}}" data-name="{{item.name}}" data-TypesOf="{{item.TypesOf}}" class="card-item flex-column"
+        wx:for="{{iconItem}}" wx:key="item">
+        <i class="{{item.cls}}"></i>
+        <text class="card-name">{{item.name}}</text>
+      </view>
+    </view>
+
+    <view class="shadow card flex-between mt2">
+      <view bindtap="changeRouter" id="{{item.id}}" data-name="{{item.name}}" data-TypesOf="{{item.TypesOf}}" class="card-item flex-column"
+        wx:for="{{Icon}}" wx:key="item">
+        <i class="{{item.cls}}"></i>
+        <text class="card-name">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</template>

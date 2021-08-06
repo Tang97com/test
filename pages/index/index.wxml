@@ -1,0 +1,34 @@
+<block>
+    <navBar>
+        <view bindtap="onBottomPop" class="location ">
+            <i class="ahh iconlocation"></i>
+            <text class="text-hidden seeclot-title" >{{current_schoolName}}</text>
+        </view>
+        <view class="navBarTitle">下单校园</view>
+    </navBar>
+    <view class="head" style="margin-top: {{navBarHeight}}px;">
+        <swiper></swiper>
+    </view>
+    <view class="container">
+        <view class="small">
+            <view class="item flexCenterColum" wx:for="{{small}}" wx:key="index" id="{{item.id}}" bindtap="handClick">
+                <image class="images vivify popIn delay-{{index}}00" wx:if="{{item.url}}" src="{{item.url}}"></image>
+                <view wx:else class="elet"></view>
+                <text class="vivify fadeIn delay-{{index}}00">{{item.title}}</text>
+            </view>
+        </view>
+        <view class="view_images">
+            <image class="view_img vivify popInBottom delay-1000" src="https://z3.ax1x.com/2021/04/22/cLEb60.jpg"
+                mode="" alt="广告图" />
+        </view>
+    </view>
+</block>
+
+
+<van-action-sheet
+  show="{{ show }}"
+  actions="{{ actions }}"
+  description="请选择你的学校"
+  bind:close="onClose"
+  bind:select="onSelect"
+/>

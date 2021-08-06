@@ -1,0 +1,5 @@
+<import src="/common/drycleanOrderDetail/drycleanOrderDetail.wxml" />
+
+<view>
+  <template is="drycleanOrderDetail" data="{{list, mask, recev, clean}}"></template>
+</view>

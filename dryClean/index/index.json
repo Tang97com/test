@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "tab": "/components/tab/tab",
+    "swiper": "/components/swiper/swiper",
+    "store": "/components/store/store",
+    "selector": "/components/selector/selector",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index"
+  }
+}

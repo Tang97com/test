@@ -1,0 +1,8 @@
+<view class="pop">
+  <view class="pup-agreement vivify popIn shadow">
+    <scroll-view scroll-y="true" class="scroll-view">
+      <rich-text class="wb_rich" nodes="{{nodes}}"></rich-text>
+      <button bindtap="closer" class="custBtn">我已确认阅读</button>
+    </scroll-view>
+  </view>
+</view>

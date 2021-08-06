@@ -1,0 +1,57 @@
+@import '/iconfont/iconfont.wxss';
+.bottom {
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tab {
+  /* background-color: blue; */
+  height: 100rpx;
+}
+.tab .ahh {
+  font-size: 45rpx;
+}
+.tabContent {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rpx;
+  position: relative;
+  color: #eee;
+}
+.tabContent text{
+  font-size: 28rpx;
+}
+.tabContent::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -40rpx;
+  bottom: -10rpx;
+  left: -40rpx;
+  /* background-color: red; */
+}
+.active {
+  color: #66a6ff;
+}
+.redyuan {
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  width: 35rpx;
+  height: 35rpx;
+  font-size: 24rpx;
+  line-height: 35rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgb(255,0,0);
+}
